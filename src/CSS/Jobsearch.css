@@ -1,6 +1,4 @@
-/* ========================================= */
-/*                JOB SEARCH                 */
-/* ========================================= */
+
 
 .job-search {
   width: 100%;
@@ -13,9 +11,9 @@
   margin: auto;
 }
 
-.job-title {
+.search-job-title {
   font-size: 48px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #1f2937;
 }
 
@@ -75,9 +73,7 @@
   transform: translateY(-2px);
   opacity: 0.95;
 }
-/* ========================================= */
-/*           LIVE CELEBRATION               */
-/* ========================================= */
+
 
 .live-celebration {
   width: 100%;
@@ -148,6 +144,7 @@
   font-size: 72px;
   font-weight: 700;
   margin: 5px 0 25px;
+  color: #4f46e5;
 
 }
 
@@ -174,9 +171,7 @@
   transform: translateY(-3px);
   box-shadow: 0 15px 30px rgba(79, 70, 229, 0.3);
 }
-/* ========================================= */
-/*              LIVE SERVICES               */
-/* ========================================= */
+
 
 .live-services {
   width: 100%;
@@ -283,9 +278,6 @@
 .live-service-card:hover .live-service-line {
   background: #fff;
 }
-/* ========================================= */
-/*          EXPLORE SERVICES BUTTON         */
-/* ========================================= */
 
 .live-explore-seervices-btn-div {
   display: flex;
@@ -310,9 +302,6 @@
   color: #fff;
 }
 
-/* ========================================= */
-/*              RESPONSIVE                  */
-/* ========================================= */
 
 @media (max-width: 1200px) {
   .job-title,
@@ -394,9 +383,7 @@
 }
 
 
-/* ========================================= */
-/*           LIVE FOCUS DOMAINS              */
-/* ========================================= */
+
 
 .live-focus {
   width: 100%;
@@ -410,7 +397,7 @@
   margin: 0 auto;
 }
 
-/* ================= TITLE ================= */
+
 
 .live-focus-title {
   font-size: 54px;
@@ -427,7 +414,7 @@
   margin-bottom: 70px;
 }
 
-/* ================= GRID ================= */
+
 
 .live-focus-grid {
   display: grid;
@@ -435,7 +422,7 @@
   column-gap: 120px;
 }
 
-/* ================= ITEM ================= */
+
 
 .live-focus-item {
   font-size: 22px;
@@ -454,7 +441,6 @@
   font-weight: 600;
 }
 
-/* ================= RESPONSIVE ================= */
 
 /* Large screens */
 @media (max-width: 1200px) {
@@ -518,9 +504,7 @@
     width: 70px;
   }
 }
-/* ========================================= */
-/*         LIVE FOCUS BUTTON                */
-/* ========================================= */
+
 
 .live-focus-btn-wrapper {
   display: flex;
@@ -565,9 +549,7 @@
     text-align: center;
   }
 }
-/* =========================
-   SECTION
-========================= */
+
 
 .live-jobsearch-section {
     width: 100%;
@@ -589,9 +571,7 @@
     margin-bottom: 70px;
 }
 
-/* =========================
-   GRID LAYOUT
-========================= */
+
 
 .live-jobsearch-form-wrapper {
     display: grid;
@@ -600,9 +580,6 @@
     align-items: start;
 }
 
-/* =========================
-   FIELDS
-========================= */
 
 .live-jobsearch-field {
     display: flex;
@@ -625,9 +602,6 @@
     cursor: pointer;
 }
 
-/* =========================
-   BUTTON COLUMN
-========================= */
 
 .live-jobsearch-button-wrapper {
     display: flex;
@@ -671,9 +645,7 @@
     text-decoration: underline;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+
 
 @media (max-width: 1024px) {
     .live-jobsearch-form-wrapper {
@@ -698,11 +670,8 @@
     }
 }
 
-/* =========================
-   RESPONSIVE STYLES
-========================= */
 
-/* ---------- Tablets (1024px and below) ---------- */
+
 @media (max-width: 1024px) {
 
   .job-search {
@@ -728,7 +697,6 @@
 }
 
 
-/* ---------- Small Tablets (768px and below) ---------- */
 @media (max-width: 768px) {
 
   .job-search {
@@ -756,7 +724,6 @@
 }
 
 
-/* ---------- Mobile (480px and below) ---------- */
 @media (max-width: 480px) {
 
   .job-search {
@@ -785,11 +752,8 @@
 
 }
 
-/* ========================================= */
-/*            RESPONSIVE STYLES             */
-/* ========================================= */
 
-/* ---------- Large Tablets (1024px ↓) ---------- */
+
 @media (max-width: 1024px) {
 
   .live-services {
@@ -819,7 +783,6 @@
 }
 
 
-/* ---------- Tablets (768px ↓) ---------- */
 @media (max-width: 768px) {
 
   .live-services {
@@ -863,7 +826,6 @@
 }
 
 
-/* ---------- Mobile (480px ↓) ---------- */
 @media (max-width: 480px) {
 
   .live-services {

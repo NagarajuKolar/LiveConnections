@@ -1,6 +1,4 @@
-/* ===================================== */
-/* LIVE FADE UP ANIMATION */
-/* ===================================== */
+
 
 .live-fade-up {
   opacity: 0;
@@ -13,18 +11,13 @@
   transform: translateY(0);
 }
 
-/* ===================================== */
-/* LIVE DIVERSITY PAGE */
-/* ===================================== */
+
 
 .live-diversity-page {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* ===================================== */
-/* HERO SECTION */
-/* ===================================== */
 
 .live-diversity-hero {
   position: relative;
@@ -89,9 +82,6 @@
   border-color: black;
 }
 
-/* ===================================== */
-/* CTA GRADIENT SECTION */
-/* ===================================== */
 
 .live-diversity-cta {
   width: 100%;
@@ -138,9 +128,8 @@
   width: 100%;
 }
 
-/* ===================================== */
-/* TABLET RESPONSIVE */
-/* ===================================== */
+
+
 
 @media (max-width: 1024px) {
 
@@ -161,9 +150,7 @@
   }
 }
 
-/* ===================================== */
-/* MOBILE RESPONSIVE */
-/* ===================================== */
+
 
 @media (max-width: 768px) {
 
@@ -211,9 +198,7 @@
   }
 }
 
-/* ===================================== */
-/* INFO SPLIT SECTION */
-/* ===================================== */
+
 
 .live-diversity-info {
   width: 100%;
@@ -238,7 +223,7 @@
   font-size: 25px;
   line-height: 1.5;
   font-weight: 500;
-  color: #8a6bd6; /* purple shade */
+  color: #8a6bd6; 
 }
 
 /* RIGHT SIDE */
@@ -286,9 +271,7 @@
     font-size: 15px;
   }
 }
-/* ===================================== */
-/* STATS SECTION */
-/* ===================================== */
+
 
 .live-diversity-stats {
   width: 100%;
@@ -311,14 +294,14 @@
   max-width: 900px;
 }
 
-/* GRID */
+
 
 .live-diversity-stats-grid {
   display: flex;
   gap: 40px;
 }
 
-/* CARD */
+
 
 .live-diversity-stat-card {
   flex: 1;
@@ -349,9 +332,7 @@
   margin-top: 80px;
   text-align: center;
 }
-/* ===================================== */
-/* TABLET */
-/* ===================================== */
+
 
 @media (max-width: 1024px) {
 
@@ -372,9 +353,7 @@
   }
 }
 
-/* ===================================== */
-/* MOBILE */
-/* ===================================== */
+
 
 @media (max-width: 768px) {
 
@@ -408,9 +387,6 @@
     margin-top: 50px;
   }
 }
-/* ===================================== */
-/* SPLIT CTA SECTION */
-/* ===================================== */
 
 .live-diversity-split {
   width: 100%;
@@ -511,9 +487,7 @@
     height: 300px;
   }
 }
-/* ===================================== */
-/* INITIATIVES SECTION */
-/* ===================================== */
+
 
 .live-diversity-initiatives {
   width: 100%;
@@ -678,9 +652,7 @@
 }
 
 
-/* ===================================== */
-/* SOLUTIONS SPLIT SECTION */
-/* ===================================== */
+
 
 .live-diversity-solutions {
   width: 100%;

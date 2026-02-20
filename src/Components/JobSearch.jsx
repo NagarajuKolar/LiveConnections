@@ -2,6 +2,15 @@ import React from 'react'
 import { FiUser, FiMessageCircle, FiTarget } from "react-icons/fi";
 import '../CSS/Jobsearch.css'
 import womanimg from '../assets/womanimg.png'
+import {
+  UserSearch,
+  MessageCircleQuestion,
+  Handshake,
+  Users,
+  Building2,
+  UserRoundSearch,
+  Crown
+} from "lucide-react";
 import { useState } from 'react';
 function JobSearch() {
     const [formData, setFormData] = useState({
@@ -34,7 +43,7 @@ function JobSearch() {
         <>
             <section className="job-search">
                 <div className="job-search-container">
-                    <h1 className="job-title">
+                    <h1 className="search-job-title">
                         Find Your <span>dream job.</span>
                     </h1>
 
@@ -168,11 +177,6 @@ function JobSearch() {
 
 
 
-
-
-
-
-
                         {/* SERVICE CARDS */}
                         <div className="live-services-cards">
 
@@ -210,44 +214,42 @@ function JobSearch() {
 
                     </div>
 
-                    {/* SERVICE CARDS */}
                     <div className="live-services-cards">
 
-                        {/* CARD 1 */}
                         <div className="live-service-card live-service-card-active">
                             <div className="live-service-icon">
-                                <FiUser />
+                                <UserSearch size={48} strokeWidth={1.2} />
                             </div>
                             <h3>Search Capabilities</h3>
                             <div className="live-service-line"></div>
                             <span className="live-service-link">Explore Service</span>
                         </div>
 
-                        {/* CARD 2 */}
+
                         <div className="live-service-card">
                             <div className="live-service-icon">
-                                <FiMessageCircle />
+                                <MessageCircleQuestion size={48} strokeWidth={1.2} />
                             </div>
-                            <h3>Interview As Service</h3>
+                            <h3>Interview As A Service</h3>
                             <div className="live-service-line"></div>
                             <span className="live-service-link">Explore Service</span>
                         </div>
 
-                        {/* CARD 3 */}
+
                         <div className="live-service-card">
                             <div className="live-service-icon">
-                                <FiTarget />
+                                <Handshake size={48} strokeWidth={1.2} />
                             </div>
                             <h3>Contingency Recruitment</h3>
                             <div className="live-service-line"></div>
                             <span className="live-service-link">Explore Service</span>
                         </div>
-                        {/* CARD 3 */}
+
                         <div className="live-service-card">
                             <div className="live-service-icon">
-                                <FiTarget />
+                                <UserRoundSearch size={48} strokeWidth={1.2} />
                             </div>
-                            <h3>Contingency Recruitment</h3>
+                            <h3>Recruitment</h3>
                             <div className="live-service-line"></div>
                             <span className="live-service-link">Explore Service</span>
                         </div>
@@ -261,6 +263,7 @@ function JobSearch() {
                 </div>
 
             </section>
+
             <section className="live-focus">
                 <div className="live-focus-container">
 
