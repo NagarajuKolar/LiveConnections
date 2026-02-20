@@ -1,0 +1,239 @@
+
+
+.live-jobsearch-section {
+  width: 100%;
+  min-height: 100vh;
+  background: #ececec;
+  padding: 100px 0 60px;
+  font-family: "Manrope", sans-serif;
+}
+
+.live-jobsearch-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+
+
+.live-jobsearch-title {
+  font-size: 58px;
+  font-weight: 500;
+  color: #243746;
+  margin-bottom: 60px;
+  letter-spacing: -1px;
+}
+
+
+
+.live-jobsearch-form-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  align-items: start;
+}
+
+
+
+.live-jobsearch-field {
+  display: flex;
+  flex-direction: column;
+}
+.live-jobsearch-label-space {
+    height: 20px;
+    margin-bottom: 12px;
+}
+.live-jobsearch-field label {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #243746;
+  font-weight: 500;
+}
+
+.live-jobsearch-field select {
+  height: 56px;
+  border-radius: 10px;
+  border: 1px solid #243746;
+  padding: 0 18px;
+  font-size: 16px;
+  background: #ffffff;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.live-jobsearch-field select:focus {
+  border-color: #8f63d6;
+}
+
+
+
+.live-jobsearch-button-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+.live-jobsearch-btn {
+  height: 56px;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(90deg, #8f63d6, #4b55d6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.live-jobsearch-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
+}
+
+
+.live-jobsearch-clear {
+  margin-top: 14px;
+  font-size: 15px;
+  color: #243746;
+  cursor: pointer;
+  width: fit-content;
+  position: relative;
+}
+
+
+.live-jobsearch-clear::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 40%;
+  height: 2px;
+  background: #243746;
+  transition: 0.3s ease;
+}
+
+.live-jobsearch-clear:hover::after {
+  width: 100%;
+}
+
+
+@media (max-width: 1024px) {
+
+  .live-jobsearch-title {
+    font-size: 44px;
+  }
+
+  .live-jobsearch-form-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  .live-jobsearch-section {
+    padding: 90px 0;
+  }
+
+  .live-jobsearch-title {
+    font-size: 32px;
+    margin-bottom: 50px;
+  }
+
+  .live-jobsearch-form-wrapper {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .live-jobsearch-btn {
+    width: 100%;
+  }
+  .live-jobsearch-section {
+    width: 100%;
+    min-height: auto;
+    background: #ececec;
+    padding: 30px 0 30px;
+    font-family: "Manrope", sans-serif;
+}
+.live-jobs-underline {
+
+    margin-bottom: 30px;
+}
+}
+
+
+.live-resume-section {
+  width: 100%;
+  background: #8f95d1;
+  padding: 120px 0;
+  font-family: "Manrope", sans-serif;
+}
+
+.live-resume-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.live-resume-heading {
+  font-size: 42px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #243746;
+  max-width: 900px;
+  margin-bottom: 55px;
+}
+
+/* BUTTON */
+
+.live-resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 42px;
+  background: #ffffff;
+  color: #243746;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.live-resume-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.18);
+  background-color: transparent;
+  border: 1px solid #ffffff;
+}
+
+/* =========================
+   CTA RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+  .live-resume-heading {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .live-resume-section {
+    padding: 80px 0;
+  }
+
+  .live-resume-heading {
+    font-size: 26px;
+  }
+
+  .live-resume-btn {
+    width: 100%;
+  }
+}

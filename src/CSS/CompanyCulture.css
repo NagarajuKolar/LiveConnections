@@ -1,0 +1,424 @@
+.connect-culture-container {
+    width: 100%;
+    background: #f3f3f3;
+    padding-bottom: 80px;
+    padding: 50px 80px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+
+.connect-culture-title,
+.connect-jobs-title {
+    position: relative;
+    font-size: 46px;
+    font-weight: 600;
+    color: #222;
+}
+
+
+
+.connect-culture-title::after,
+.connect-jobs-title::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    width: 60px;
+    height: 4px;
+    background: #7c6ee6;
+    border-radius: 2px;
+}
+
+
+
+.connect-culture-banner {
+    padding-top: 40px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.connect-culture-banner img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+
+
+.connect-banner-text {
+    position: absolute;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    max-width: 600px;
+}
+
+
+
+.connect-culture-description {
+    max-width: 900px;
+    margin: 50px auto 20px;
+    text-align: center;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+
+
+.connect-culture-contact {
+    color: #7c6ee6;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 40px 0px 30px;
+    max-width: 900px;
+}
+
+.connect-subtitle {
+    color: #1B3446;
+    font-family: "ClashDisplay", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 42px;
+    margin-top: 40px;
+}
+
+
+.connect-di-container {
+    width: 100%;
+    font-family: "Segoe UI", sans-serif;
+}
+
+
+
+.connect-di-hero {
+    position: relative;
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+}
+
+.connect-di-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.connect-di-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right,
+            rgba(30, 35, 70, 0.85) 0%,
+            rgba(30, 35, 70, 0.65) 35%,
+            rgba(30, 35, 70, 0.25) 60%,
+            rgba(30, 35, 70, 0) 85%);
+}
+
+
+
+
+.connect-di-content {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    color: white;
+    max-width: 520px;
+
+    opacity: 0;
+    transform: translateY(calc(-50% + 100px));
+    animation: connectFadeUpCenter 1s ease-out forwards;
+}
+
+@keyframes connectFadeUpCenter {
+    to {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
+
+
+
+
+.connect-di-title {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 1.05;
+    margin-bottom: 35px;
+    position: relative;
+}
+
+
+
+.connect-di-title::after {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 6px;
+    background: #8b78f0;
+    margin-top: 20px;
+    border-radius: 3px;
+}
+
+
+
+
+.connect-di-text {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+
+
+
+.connect-di-btn {
+    background: #ffffff;
+    color: #7c6ee6;
+    border: none;
+    padding: 16px 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.connect-di-btn:hover {
+    background: #f3f3f3;
+}
+
+
+
+.connect-di-cta {
+    background: #8b78f0;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.connect-di-cta p {
+    max-width: 780px;
+    margin: 0 auto 35px;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+
+
+.connect-di-cta-btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.connect-di-cta-btn:hover {
+    background: white;
+    color: #8b78f0;
+}
+
+
+
+.connect-di-cta-inner {
+    opacity: 0;
+    transform: translateY(80px);
+    animation: connectFadeUp 1s ease-out forwards;
+}
+
+
+
+
+@keyframes connectFadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    .connect-banner-text {
+        left: 50px;
+        font-size: 38px;
+    }
+
+    .connect-culture-title,
+    .connect-jobs-title {
+        padding: 30px 40px 10px;
+        font-size: 28px;
+    }
+
+    .connect-culture-title::after,
+    .connect-jobs-title::after {
+        left: 40px;
+    }
+
+    .connect-culture-contact {
+        margin: 40px 40px 20px;
+        font-size: 20px;
+    }
+
+    .connect-di-hero {
+        height: 460px;
+    }
+
+    .connect-di-content {
+        left: 50px;
+        max-width: 450px;
+    }
+
+    .connect-di-title {
+        font-size: 48px;
+    }
+
+    .connect-di-text {
+        font-size: 20px;
+    }
+
+    .connect-di-cta p {
+        font-size: 20px;
+    }
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .connect-culture-banner img {
+        height: 300px;
+    }
+
+    .connect-banner-text {
+        left: 25px;
+        font-size: 28px;
+        max-width: 90%;
+    }
+
+    .connect-culture-title,
+    .connect-jobs-title {
+        padding: 25px 20px 10px;
+        font-size: 24px;
+    }
+
+    .connect-culture-title::after,
+    .connect-jobs-title::after {
+        left: 20px;
+        width: 50px;
+    }
+
+    .connect-culture-description {
+        margin: 30px auto;
+        font-size: 14px;
+                text-align: justify;
+    }
+
+    .connect-culture-contact {
+        margin: 30px 20px;
+        font-size: 18px;
+    }
+
+    .connect-di-hero {
+        height: 420px;
+    }
+
+    .connect-di-content {
+        left: 25px;
+        right: 25px;
+        max-width: 100%;
+    }
+
+    .connect-di-title {
+        font-size: 36px;
+    }
+
+    .connect-di-title::after {
+        width: 70px;
+        height: 5px;
+    }
+
+    .connect-di-text {
+        font-size: 18px;
+    }
+
+    .connect-di-btn {
+        padding: 14px 28px;
+    }
+
+    .connect-di-cta {
+        padding: 60px 20px;
+    }
+
+    .connect-di-cta p {
+        font-size: 18px;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+
+    .connect-culture-banner img {
+        height: 240px;
+    }
+
+    .connect-culture-container {
+        width: 100%;
+        background: #f3f3f3;
+        padding-bottom: 80px;
+        padding: 25px 10px;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    .connect-banner-text {
+        font-size: 22px;
+        left: 15px;
+    }
+
+    .connect-culture-title,
+    .connect-jobs-title {
+        font-size: 20px;
+    }
+
+    .connect-culture-contact {
+        font-size: 16px;
+    }
+
+    .connect-di-title {
+        font-size: 30px;
+    }
+
+    .connect-di-text {
+        font-size: 16px;
+    }
+
+    .connect-di-btn {
+        font-size: 14px;
+        padding: 12px 24px;
+    }
+
+    .connect-di-cta p {
+        font-size: 16px;
+    }
+}

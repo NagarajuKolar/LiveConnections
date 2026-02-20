@@ -1,0 +1,252 @@
+.print-wrapper {
+  position: relative;
+}
+
+.print-sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  margin: 10px 50px;
+  overflow: hidden;
+  background: #f5f6f8;
+}
+
+.print-slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.15s linear;
+}
+
+.print-slide {
+  min-width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.print-header {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  z-index: 5;
+}
+
+.print-section-title {
+  font-size: 36px;
+  color: #4a4a4a;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+}
+
+.print-section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  width: 90px;
+  height: 6px;
+  background: linear-gradient(45deg, rgb(46, 33, 190), rgb(185, 173, 227));
+  border-radius: 5px;
+}
+
+.print-content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.print-left {
+  max-width: 380px;
+}
+
+.print-number {
+  font-size: 60px;
+  color: #8b6bdc;
+  margin: 0;
+  font-weight: 700;
+}
+
+.print-title {
+  margin: 10px 0 20px;
+  color: #4a4a4a;
+  font-size: 34px;
+  position: relative;
+  display: inline-block;
+}
+
+.print-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -16px;
+  width: 80px;
+  height: 6px;
+  background: linear-gradient(45deg, rgb(46, 33, 190), rgb(185, 173, 227));
+  border-radius: 5px;
+}
+
+.print-text {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.print-right {
+  display: flex;
+  justify-content: center;
+}
+
+.print-image {
+  width: 100%;
+  max-width: 650px;
+  object-fit: cover;
+}
+
+.print-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0 40px;
+}
+
+.print-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.print-dot.active {
+  background: #8b6bdc;
+}
+
+.service-button-wrap {
+  text-align: center;
+    width: 20%;
+    margin: 40px auto;
+}
+
+.service-button {
+  padding: 12px 28px;
+  border: 2px solid #3f6fff;
+  background: transparent;
+  color: #3f6fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.service-button:hover {
+  background: #3f6fff;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .print-sticky {
+    position: relative;
+    height: auto;
+    margin: 0;
+  }
+
+  .print-slide {
+    min-width: 100%;
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .print-content {
+    grid-template-columns: 1fr;
+  }
+
+  .print-right {
+    display: none;
+  }
+
+  .print-number {
+    font-size: 45px;
+  }
+
+  .print-title {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .print-title::after {
+    width: 70px;
+    height: 4px;
+    bottom: -10px;
+  }
+
+  .print-text {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  .print-text-animate {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  .print-animate .print-text-animate {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.6s ease;
+    transition-delay: 0.4s;
+  }
+
+  .print-header {
+    position: relative;
+    margin: 30px 20px 10px;
+  }
+
+  .service-section {
+    padding: 50px 40px;
+  }
+}
+
+@media (max-width: 468px) {
+  .print-slide {
+    padding: 60px 16px;
+  }
+
+  .print-number {
+    font-size: 34px;
+  }
+
+  .print-title {
+    font-size: 22px;
+    margin: 8px 0 18px;
+  }
+
+  .print-title::after {
+    width: 55px;
+    height: 3px;
+  }
+
+  .print-text {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .service-section {
+    padding: 40px 20px;
+  }
+
+  .service-title {
+    font-size: 26px;
+  }
+
+  .service-card {
+    padding: 22px 18px;
+  }
+
+  .service-card-title {
+    font-size: 16px;
+  }
+}

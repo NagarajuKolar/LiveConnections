@@ -1,0 +1,202 @@
+.serv-scope {
+    background: #f6f6f6;
+    padding: 100px 8%;
+    font-family: "Manrope", sans-serif;
+}
+
+.serv-scope-heading {
+    font-size: 34px;
+    line-height: 1.35;
+    color: #8b6bd6;
+    max-width: 1000px;
+    margin-bottom: 70px;
+}
+
+.serv-scope-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
+
+.serv-scope-col p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #4a5a6a;
+    margin-bottom: 20px;
+}
+
+.serv-scope-title {
+    font-size: 28px;
+    margin-bottom: 26px;
+    color: #1f2d3d;
+    position: relative;
+    display: inline-block;
+}
+
+.serv-scope-title::after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 4px;
+    margin-top: 14px;
+    background: #1f2d3d;
+}
+
+.serv-scope-list {
+    padding-left: 20px;
+}
+
+.serv-scope-list li {
+    margin-bottom: 14px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #1f2d3d;
+}
+
+.serv-rpo {
+  background: #1e5be0;
+  color: white;
+  padding: 110px 8%;
+  font-family: "Manrope", sans-serif;
+}
+.serv-rpo-title {
+  font-size: 56px;
+  line-height: 1.1;
+  margin-bottom: 28px;
+  position: relative;
+  display: inline-block;
+}
+
+
+.serv-rpo-title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 4px;
+  margin-top: 16px;
+  background: #163b7a;
+}
+.serv-rpo-intro {
+  font-size: 22px;
+  line-height: 1.6;
+  max-width: 820px;
+  margin-bottom: 70px;
+  opacity: 0.95;
+}
+.serv-rpo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 70px;
+}
+.serv-rpo-col p {
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+.serv-rpo-subtitle {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+.serv-rpo-list {
+  padding-left: 20px;
+}
+
+.serv-rpo-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+.serv-rpo-btn {
+  background: #0e2a52;
+  display: inline-block;
+  padding: 16px 36px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.serv-final {
+  background: linear-gradient(135deg, #9c79c9, #3b50d8);
+  padding: 120px 8%;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
+}
+.serv-final-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.serv-final-text {
+  font-size: 36px;
+  line-height: 1.15;
+  color: white;
+  margin-bottom: 50px;
+}
+.serv-final-btn {
+  display: inline-block;
+  padding: 16px 40px;
+  border: 2px solid white;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.serv-final-btn:hover {
+  background: white;
+  color: #5a4bcf;
+}
+
+
+
+@media (max-width: 900px) {
+    .serv-scope-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .serv-scope-heading {
+        font-size: 28px;
+    }
+      .serv-rpo-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .serv-rpo-title {
+    font-size: 42px;
+  }
+
+  .serv-rpo-intro {
+    font-size: 18px;
+  }
+    .serv-final-text {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 572px) {
+    .serv-scope {
+        padding: 70px 6%;
+    }
+
+    .serv-scope-heading {
+        font-size: 22px;
+    }
+      .serv-rpo {
+    padding: 70px 6%;
+  }
+
+  .serv-rpo-title {
+    font-size: 30px;
+  }
+    .serv-final {
+    padding: 80px 4%;
+  }
+
+  .serv-final-text {
+    font-size: 22px;
+  }
+
+  .serv-final-btn {
+    padding: 14px 28px;
+  }
+}

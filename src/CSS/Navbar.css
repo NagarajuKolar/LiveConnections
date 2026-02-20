@@ -1,0 +1,295 @@
+.navbar {
+  width: 100%;
+  background: rgb(218 212 212 / 43%);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+}
+
+.navbar-container {
+  padding: 20px 35px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+}
+
+.header-logo {
+  height: 65px;
+  object-fit: contain;
+}
+
+
+.navbar-center {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.navbar-center a {
+  text-decoration: none;
+  color: #222;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Manrope", sans-serif;
+}
+
+.navbar-center a:hover {
+  color: #3b5cff;
+}
+
+
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+
+
+.btn-outline {
+  background: transparent;
+  border: 1.5px solid #3b5cff;
+  color: #3b5cff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn-outline:hover {
+  background: #3b5cff;
+  color: white;
+}
+
+.job-btn{
+    background: linear-gradient(135deg, #7a6cff, #9b7cff);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer; 
+  font-size: 18px; 
+}
+.job-btn:hover {
+  opacity: 0.9;
+}
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+
+
+
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background: rgba(0, 0, 0, 0.55);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+
+  z-index: 3000; 
+}
+
+.sidebar-overlay.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+
+
+.responsive-panel {
+  position: fixed;
+  background: white;
+  z-index: 3100;
+  display: none;
+  flex-direction: column;
+  transition: 0.35s ease;
+}
+
+
+
+.panel-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.panel-nav a {
+padding: 20px 20px;
+    border-bottom: 1px solid #e2e2e2;
+    text-decoration: none;
+    color: #111;
+    font-size: 18px;
+   font-family: "Manrope", sans-serif;
+    font-weight: 600;
+}
+
+.panel-nav a:hover {
+  background: #fafafa;
+  color: #7a6cff;
+}
+
+
+.panel-actions {
+  margin-top: auto;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.panel-actions button {
+  width: 100%;
+}
+
+ 
+
+.panel-close {
+  position: relative;
+  top: 18px;
+  left: 150px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+
+
+/* TAB*/
+
+@media (max-width: 1024px) and (min-width: 521px) {
+
+  .navbar-center,
+  .desktop-only {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-container {
+    padding: 18px 28px;
+  }
+
+  .header-logo {
+    height: 54px;
+  }
+
+ 
+
+  .responsive-panel {
+    display: flex;
+    top: 0;
+    left: -360px;
+    width: 360px;
+    height: 100vh;
+  }
+
+  .responsive-panel.open {
+    left: 0;
+  }
+  
+  .responsive-panel.open .sidebar-overlay  {
+    display: block;
+  }
+
+
+  .sidebar-overlay {
+    display: block;
+  }
+
+  .panel-close {
+    display: block;
+  }
+}
+
+
+
+
+@media (max-width: 520px) {
+
+  .navbar-container {
+    padding: 20px 10px;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    height: 51px;
+  }
+
+  .navbar-center,
+  .desktop-only {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+
+
+  .sidebar-overlay {
+    display: none !important;
+  }
+
+
+
+  .responsive-panel {
+    display: flex; 
+    width: 100%;
+    height: auto;
+
+    top: 92px; 
+    left: 0;
+
+    transform: translateY(-120%);
+    opacity: 0;
+
+    transition:
+      transform 0.35s ease,
+      opacity 0.25s ease;
+  }
+
+  .responsive-panel.open {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+
+
+
+  .panel-close {
+    display: none !important;
+  }
+}
+

@@ -1,0 +1,211 @@
+.live-footer {
+  background: #1B3446;
+  color: #ffffff;
+  padding: 90px 8% 40px 8%;
+  font-family: "Poppins", sans-serif;
+}
+
+.live-footer-wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* ================= TOP ================= */
+
+.live-footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.live-footer-left {
+  flex: 1.2;
+}
+
+.live-footer-title {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+.live-footer-divider-small {
+  width: 60px;
+  height: 4px;
+  background: #ffffff;
+  margin: 30px 0 35px 0;
+}
+
+.live-footer-description {
+  font-size: 30px;
+  line-height: 1.7;
+  color: #b07cff;
+  max-width: 450px;
+}
+
+/* RIGHT */
+
+.live-footer-right {
+  flex: 1;
+  display: flex;
+  gap: 100px;
+}
+
+.live-footer-column {
+  min-width: 220px;
+}
+
+.live-footer-heading {
+  color: #a16cff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.live-footer-company {
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.live-footer-address,
+.live-footer-contact {
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+.live-footer-email-space {
+  margin-top: 30px;
+}
+
+/* ================= DIVIDER ================= */
+
+.live-footer-divider-large {
+  margin: 70px 0 40px 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ================= BOTTOM ================= */
+
+/* ================= BOTTOM ================= */
+
+.live-footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+/* LEFT LINKS */
+
+.live-footer-links {
+  display: flex;
+  gap: 45px;
+  flex-wrap: wrap;
+}
+
+.live-footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 400;
+  transition: 0.3s ease;
+}
+
+.live-footer-links a:hover {
+  color: #a16cff;
+}
+
+/* RIGHT AREA */
+
+.live-footer-right-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 25px;
+}
+
+/* SOCIAL ICONS */
+
+.live-footer-social {
+  display: flex;
+  gap: 35px;
+  font-size: 26px;   /* smaller than before */
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.live-footer-social svg {
+  transition: 0.3s ease;
+}
+
+.live-footer-social svg:hover {
+  color: #a16cff;
+  transform: translateY(-3px);
+}
+
+/* COPYRIGHT */
+
+.live-footer-copy {
+  font-size: 14px;
+  opacity: 0.75;
+  text-align: right;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1024px) {
+
+  .live-footer-top {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .live-footer-right {
+    gap: 60px;
+  }
+
+  .live-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+  }
+
+  .live-footer-right-area {
+    align-items: flex-start;
+  }
+
+  .live-footer-copy {
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .live-footer {
+    padding: 70px 6% 35px 6%;
+  }
+
+  .live-footer-title {
+    font-size: 32px;
+  }
+
+  .live-footer-description {
+    font-size: 18px;
+  }
+
+  .live-footer-right {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .live-footer-links {
+    gap: 25px;
+  }
+
+  .live-footer-social {
+    gap: 25px;
+    font-size: 22px;
+  }
+}

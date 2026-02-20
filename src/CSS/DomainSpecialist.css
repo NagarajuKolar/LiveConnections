@@ -1,0 +1,844 @@
+/* ===================================== */
+/* DOMAIN HERO SECTION */
+/* ===================================== */
+
+.live-domain-hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-position: center left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+/* Container */
+.live-domain-hero-container {
+    width: 100%;
+
+}
+
+/* Content */
+.live-domain-hero-content {
+    max-width: 650px;
+}
+
+/* Title */
+.live-domain-hero-title {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #1f2d3d;
+}
+
+/* Description */
+.live-domain-hero-desc {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #34495e;
+    max-width: 520px;
+}
+
+/* Button */
+.live-domain-hero-btn {
+    margin-top: 40px;
+    padding: 16px 42px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 2px solid #2f5bea;
+    background: transparent;
+    color: #2f5bea;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.live-domain-hero-btn:hover {
+    background: transparent;
+    color: black;
+    border-color: black;
+}
+
+@media (max-width: 1024px) {
+
+    .live-domain-hero {
+        height: 650px;
+    }
+
+    .live-domain-hero-container {
+        padding-left: 60px;
+    }
+
+    .live-domain-hero-title {
+        font-size: 42px;
+    }
+
+    .live-domain-hero-desc {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .live-domain-hero {
+        height: 350px;
+        background-position: center;
+        padding: 10px;
+    }
+
+    .live-domain-hero-container {
+        padding: 0px;
+        max-width: 200px;
+    }
+
+    .live-domain-hero-title {
+        font-size: 22px;
+    }
+
+    .live-domain-hero-desc {
+        display: none;
+    }
+
+    .live-domain-hero-btn {
+        margin-top: 15px;
+
+        padding: 12px;
+    }
+}
+
+/* ===================================== */
+/* DOMAIN INFO SECTION */
+/* ===================================== */
+
+.live-domain-info {
+    width: 100%;
+    background-color: #1f5be3;
+    /* same blue tone */
+    padding: 120px 0;
+}
+
+.live-domain-info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 100px;
+}
+
+.live-domain-info-text {
+    font-size: 32px;
+    line-height: 1.5;
+    color: #ffffff;
+    font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+
+    .live-domain-info {
+        padding: 80px 0;
+    }
+
+    .live-domain-info-container {
+        padding: 0 60px;
+    }
+
+    .live-domain-info-text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .live-domain-info {
+        padding: 60px 0;
+    }
+
+    .live-domain-info-container {
+        padding: 0 20px;
+    }
+
+    .live-domain-info-text {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+}
+
+/* ===================================== */
+/* DOMAIN DETAIL SECTION */
+/* ===================================== */
+
+.live-domain-detail {
+    width: 100%;
+    display: flex;
+    min-height: 450px;
+    padding: 0px;
+}
+
+/* LEFT SIDE */
+.live-domain-detail-left {
+    width: 50%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.live-domain-detail-title {
+    font-size: 60px;
+    line-height: 1.1;
+    font-weight: 600;
+    color: #1f2d3d;
+    max-width: 70%;
+    padding-left: 20px;
+}
+
+.live-domain-detail-underline {
+    width: 80px;
+    height: 6px;
+    margin-top: 30px;
+    background: linear-gradient(90deg, #6a5acd, #8a2be2);
+}
+
+/* RIGHT SIDE */
+.live-domain-detail-right {
+    width: 50%;
+    overflow: hidden;
+}
+
+.live-domain-detail-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+
+    .live-domain-detail-title {
+        font-size: 42px;
+    }
+
+    .live-domain-detail-left {
+        padding-left: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .live-domain-detail {
+        flex-direction: column;
+        padding: 0;
+
+    }
+
+    .live-domain-detail-left,
+    .live-domain-detail-right {
+        width: 100%;
+
+    }
+
+    .live-domain-detail-left {
+        padding: 50px 15px;
+        /* width: 90%; */
+
+
+    }
+
+    .live-domain-detail-title {
+        font-size: 25px;
+        max-width: 100%;
+        padding-left: 0px;
+    }
+
+    .live-domain-detail-image {
+        height: 250px;
+
+
+    }
+}
+
+/* ===================================== */
+/* DOMAIN CONTENT SECTION */
+/* ===================================== */
+
+.live-domain-content {
+    width: 100%;
+    display: flex;
+    padding: 120px 100px;
+    gap: 80px;
+}
+
+/* LEFT SIDE */
+.live-domain-content-left {
+    width: 40%;
+}
+
+.live-domain-highlight {
+    font-size: 25px;
+    color: #2f5bea;
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+.live-domain-purple-btn {
+    margin-top: 60px;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #8a2be2, #5f5fd6);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* RIGHT SIDE */
+.live-domain-content-right {
+    width: 60%;
+}
+
+.live-domain-content-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1f2d3d;
+    margin-bottom: 20px;
+}
+
+.live-domain-content-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.live-domain-read-toggle {
+    color: #8a2be2;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+
+    .live-domain-content {
+        padding: 80px 60px;
+        gap: 50px;
+    }
+
+    .live-domain-highlight {
+        font-size: 24px;
+    }
+
+    .live-domain-content-title {
+        font-size: 22px;
+    }
+
+    .live-domain-content-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .live-domain-content {
+        flex-direction: column;
+        padding: 60px 20px;
+    }
+
+    .live-domain-content-left,
+    .live-domain-content-right {
+        width: 100%;
+    }
+
+    .live-domain-highlight {
+        font-size: 20px;
+    }
+
+    .live-domain-content-title {
+        margin-top: 30px;
+    }
+
+    .live-domain-purple-btn {
+        margin-top: 30px;
+        width: 100%;
+    }
+}
+
+/* ===================================== */
+/* DOMAIN SPLIT SECTION */
+/* ===================================== */
+
+.live-domain-split {
+    width: 100%;
+    display: flex;
+    min-height: 600px;
+    padding: 0;
+}
+
+/* LEFT IMAGE */
+.live-domain-split-image {
+    width: 50%;
+    overflow: hidden;
+}
+
+.live-domain-split-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* RIGHT GRADIENT */
+.live-domain-split-content {
+    width: 50%;
+    background: linear-gradient(135deg, #8a2be2, #4b5bdc);
+    display: flex;
+    align-items: center;
+}
+
+.live-domain-split-inner {
+    padding-left: 100px;
+}
+
+.live-domain-split-title {
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 1.1;
+}
+
+.live-domain-split-underline {
+    width: 90px;
+    height: 6px;
+    background: #ffffff;
+    margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+
+    .live-domain-split-title {
+        font-size: 42px;
+    }
+
+    .live-domain-split-inner {
+        padding-left: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .live-domain-split {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .live-domain-split-image,
+    .live-domain-split-content {
+        width: 100%;
+    }
+
+    .live-domain-split-image img {
+        /* height: 350px; */
+        margin-bottom: -6px;
+
+    }
+
+    .live-domain-split-content {
+        padding: 60px 20px;
+
+    }
+
+    .live-domain-split-inner {
+        padding-left: 0;
+    }
+
+    .live-domain-split-title {
+        font-size: 28px;
+    }
+}
+
+#ready {
+    background-color: #EDEDED;
+}
+
+#informative {
+    background-color: "#1B3446";
+    width: "60%";
+}
+@media (max-width:768px) {
+    
+#informative {
+    background-color: "#1B3446";
+    width: "100%";
+}
+}
+
+/* ===================================== */
+/* TECHNOLOGY CONTENT SECTION */
+/* ===================================== */
+
+.live-domain-tech {
+  width: 100%;
+  display: flex;
+  padding: 120px 100px;
+  gap: 80px;
+}
+
+/* Common column */
+.live-domain-tech-col {
+  flex: 1;
+}
+
+/* LEFT COLUMN */
+.live-domain-tech-highlight {
+  font-size: 22px;
+  color: #2f5bea;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.live-domain-tech-btn {
+  margin-top: 60px;
+}
+
+/* MIDDLE COLUMN */
+.live-domain-tech-title {
+  font-size: 23px;
+  font-weight: 600;
+  color: #1f2d3d;
+  margin-bottom: 20px;
+}
+
+.live-domain-tech-text {
+  font-size: 16px;
+  /* line-height: 1.1; */
+  color: #444;
+}
+@media (max-width: 1024px) {
+
+  .live-domain-tech {
+    padding: 80px 60px;
+    gap: 50px;
+  }
+
+  .live-domain-tech-highlight {
+    font-size: 22px;
+  }
+
+  .live-domain-tech-title {
+    font-size: 22px;
+  }
+
+  .live-domain-tech-text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+
+  .live-domain-tech {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 30px;
+  }
+
+  .live-domain-tech-left,
+  .live-domain-tech-middle,
+  .live-domain-tech-right {
+    width: 100%;
+  }
+
+  /* Button goes to bottom */
+  .live-domain-tech-btn {
+    order: 5;
+    width: 100%;
+  }
+}
+
+
+/* ===================================== */
+/* DOMAIN CTA SECTION */
+/* ===================================== */
+
+.live-domain-cta {
+  width: 100%;
+  background: #1f5be3;
+  padding: 120px 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.live-domain-cta-container {
+  max-width: 1000px;
+}
+
+/* Main Text */
+.live-domain-cta-text {
+  font-size: 40px;
+  line-height: 1.3;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Link Wrapper */
+.live-domain-cta-link-wrapper {
+  margin-top: 60px;
+  display: inline-block;
+}
+
+/* Link */
+.live-domain-cta-link {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Underline */
+.live-domain-cta-underline {
+  width: 60px;
+  height: 2px;
+  background: #ffffff;
+  
+}
+/* ===================================== */
+/* TABLET (≤1024px) */
+/* ===================================== */
+
+@media (max-width: 1024px) {
+
+  .live-domain-cta {
+    padding: 80px 60px;
+  }
+
+  .live-domain-cta-text {
+    font-size: 30px;
+    line-height: 1.4;
+  }
+
+  .live-domain-cta-link {
+    font-size: 18px;
+  }
+
+  .live-domain-cta-underline {
+    width: 50px;
+  }
+}
+
+
+/* ===================================== */
+/* MOBILE (≤768px) */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+  .live-domain-cta {
+    padding: 60px 20px;
+  }
+
+  .live-domain-cta-container {
+    max-width: 100%;
+  }
+
+  .live-domain-cta-text {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+
+  .live-domain-cta-link-wrapper {
+    margin-top: 30px;
+  }
+
+  .live-domain-cta-link {
+    font-size: 16px;
+  }
+
+  .live-domain-cta-underline {
+    width: 40px;
+    height: 2px;
+  }
+}
+
+/* ===================================== */
+/* SHIPPING IMAGE SECTION */
+/* ===================================== */
+
+.live-domain-shipping {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  padding: 0;
+}
+
+/* Image */
+.live-domain-shipping-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Dark overlay for text readability */
+.live-domain-shipping-overlay {
+  position: absolute;
+  inset: 0;
+  /* background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.2)
+  ); */
+  display: flex;
+  align-items: center;
+}
+
+/* Content */
+.live-domain-shipping-content {
+  padding-left: 50px;
+}
+
+.live-domain-shipping-title {
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.live-domain-shipping-underline {
+  width: 100px;
+  height: 6px;
+  background: #ffffff;
+  margin-top: 30px;
+}
+@media (max-width: 1024px) {
+
+  .live-domain-shipping {
+    height: 450px;
+  }
+
+  .live-domain-shipping-title {
+    font-size: 42px;
+  }
+
+  .live-domain-shipping-content {
+    padding-left: 60px;
+  }
+}
+@media (max-width: 768px) {
+
+  .live-domain-shipping {
+    height: 300px;
+  }
+
+  .live-domain-shipping-overlay {
+    align-items: flex-end;
+    padding-bottom: 100px;
+  }
+
+  .live-domain-shipping-content {
+    padding-left: 20px;
+  }
+
+  .live-domain-shipping-title {
+    font-size: 26px;
+  }
+
+  .live-domain-shipping-underline {
+    width: 70px;
+    height: 4px;
+  }
+}
+
+#Domain_it{
+    background-color: #055BFF;
+}
+
+/* ===================================== */
+/* DIVERSITY PRACTICE SECTION */
+/* ===================================== */
+
+.live-domain-diversity {
+  width: 100%;
+  display: flex;
+  padding: 120px 100px;
+  gap: 80px;
+  align-items: center;
+}
+
+/* LEFT IMAGE */
+.live-domain-diversity-image {
+  width: 50%;
+}
+
+.live-domain-diversity-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* RIGHT CONTENT */
+.live-domain-diversity-content {
+  width: 50%;
+}
+
+.live-domain-diversity-title {
+  font-size: 34px;
+  line-height: 1.4;
+  color: #1f2d3d;
+  font-weight: 500;
+}
+
+/* LINK */
+.live-domain-diversity-link-wrapper {
+  margin-top: 40px;
+  display: inline-block;
+}
+
+.live-domain-diversity-link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #8a2be2;
+  font-weight: 500;
+}
+
+.live-domain-diversity-underline {
+  width: 120px;
+  height: 2px;
+  background: #8a2be2;
+  margin-top: 6px;
+}
+@media (max-width: 1024px) {
+
+  .live-domain-diversity {
+    padding: 80px 60px;
+    gap: 50px;
+  }
+
+  .live-domain-diversity-title {
+    font-size: 26px;
+  }
+}
+@media (max-width: 768px) {
+
+  .live-domain-diversity {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 30px;
+  }
+
+  .live-domain-diversity-image,
+  .live-domain-diversity-content {
+    width: 100%;
+  }
+
+  .live-domain-diversity-title {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .live-domain-diversity-link {
+    font-size: 16px;
+  }
+
+  .live-domain-diversity-underline {
+    width: 90px;
+  }
+}

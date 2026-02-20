@@ -1,0 +1,194 @@
+/* ================= HERO SECTION ================= */
+
+.LIVE-hero {
+    width: 100%;
+    min-height: 120vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+
+
+/* CONTENT WRAPPER */
+.LIVE-hero-content {
+    max-width: 640px;
+    padding-left: 8%;
+    padding-right: 20px;
+}
+
+/* ================= TITLE ================= */
+
+.LIVE-hero-title {
+    font-family: "Inter", sans-serif;
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.1;
+    font-weight: 600;
+    color: #223949;
+    margin-bottom: 10px;
+}
+
+/* UNDERLINE */
+.LIVE-hero-underline {
+    width: 70px;
+    height: 5px;
+    background: #6c63ff;
+    margin: 25px 0 35px 0;
+    border-radius: 3px;
+}
+
+/* ================= DESCRIPTION ================= */
+
+.LIVE-hero-description {
+    font-family: "Inter", sans-serif;
+    font-size: clamp(15px, 1.3vw, 20px);
+    line-height: 1.7;
+    color: #2c4a59;
+    margin-bottom: 45px;
+}
+
+/* ================= BUTTONS ================= */
+
+.LIVE-hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* PRIMARY BUTTON */
+.LIVE-btn-primary {
+    padding: 18px 36px;
+    background: linear-gradient(90deg, #7b6dff, #6c63ff);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.LIVE-btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(108, 99, 255, 0.3);
+}
+
+/* SECONDARY BUTTON */
+.LIVE-btn-secondary {
+    padding: 18px 36px;
+    background: #f0f0f5;
+    border: none;
+    color: #6c63ff;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.LIVE-btn-secondary:hover {
+    background: transparent;
+    border: 2px solid #6c63ff;
+}
+
+/* ===================================================== */
+/* ================= LARGE SCREENS ====================== */
+/* ===================================================== */
+
+@media (min-width: 1600px) {
+    .LIVE-hero-content {
+        padding-left: 10%;
+    }
+
+    .LIVE-btn-primary,
+    .LIVE-btn-secondary {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+/* ===================================================== */
+/* ================= TABLET VERSION ===================== */
+/* ===================================================== */
+
+@media (max-width: 1024px) {
+
+    .LIVE-hero {
+        background-position: center right;
+    }
+
+    .LIVE-hero-content {
+        max-width: 520px;
+        padding-left: 6%;
+    }
+
+    .LIVE-hero-underline {
+        margin: 20px 0 30px 0;
+    }
+
+    .LIVE-btn-primary,
+    .LIVE-btn-secondary {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+/* ===================================================== */
+/* ================= MOBILE VERSION ===================== */
+/* ===================================================== */
+
+@media (max-width: 768px) {
+
+    .LIVE-hero {
+        min-height: auto;
+        padding: 120px 20px 80px 20px;
+        background-position: center;
+    }
+
+
+    .LIVE-hero-content {
+        padding-left: 0;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    .LIVE-hero-buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+
+    }
+
+    .LIVE-btn-primary,
+    .LIVE-btn-secondary {
+        width: 40%;
+        text-align: center;
+    }
+
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    .LIVE-hero {
+        padding: 100px 16px 60px 16px;
+    }
+
+    .LIVE-hero-description {
+        margin-bottom: 30px;
+    }
+
+    .LIVE-btn-primary,
+    .LIVE-btn-secondary {
+        padding: 10px;
+        font-size: 15px;
+        font-size: 12px;
+        width: 60%;
+
+    }
+}

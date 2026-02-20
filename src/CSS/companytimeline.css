@@ -1,0 +1,185 @@
+/* ======================================================
+   COMPANY TIMELINE SECTION – DESKTOP DEFAULT
+====================================================== */
+
+.live-company-section {
+  width: 100%;
+  background: #1f3b4a;
+  position: relative;
+}
+
+/* Scroll container */
+.live-scroll-area {
+  position: relative;
+}
+
+/* Sticky wrapper */
+.live-sticky-wrapper {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+/* ================= LEFT SIDE ================= */
+
+.live-left {
+  width: 22%;
+}
+
+.live-left h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.live-underline-company {
+  width: 120px;
+  height: 6px;
+  background: linear-gradient(90deg, #2a036d, #7c6bff);
+}
+
+/* ================= CENTER IMAGE ================= */
+
+.live-center {
+  width: 28%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.live-center img {
+  max-height: 100vh;
+  width: auto;
+  max-width: 300px;
+  object-fit: contain;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+/* ================= RIGHT CONTENT ================= */
+
+.live-right {
+  width: 40%;
+}
+
+.live-right h2 {
+  font-size: 90px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.live-right h3 {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.live-right p {
+  font-size: 24px;
+  line-height: 1.6;
+  font-weight: 500;
+  background: linear-gradient(90deg, #9f8fff, #7c6bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.live-right small {
+  color: #cccccc;
+  font-size: 14px;
+}
+
+/* ================= FADE ANIMATION ================= */
+
+.live-fade {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ======================================================
+   ACCORDION DEFAULT (HIDDEN ON DESKTOP)
+====================================================== */
+
+.live-mobile-accordion {
+  display: none;
+}
+
+/* ======================================================
+   TABLET & MOBILE VERSION (≤1024px)
+====================================================== */
+
+@media (max-width: 1024px) {
+
+  /* Hide desktop scroll layout */
+  .live-scroll-area {
+    display: none;
+  }
+
+  /* Show accordion */
+  .live-mobile-accordion {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+
+  .live-acc-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 25px 0;
+  }
+
+  .live-acc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .live-acc-year {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+
+  .live-acc-year.active {
+    background: linear-gradient(90deg, #9f8fff, #7c6bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .live-acc-icon {
+    font-size: 24px;
+    color: #9f8fff;
+    transition: transform 0.3s ease;
+  }
+
+  .live-acc-content {
+    margin-top: 20px;
+  }
+
+  .live-acc-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffffff;
+  }
+}

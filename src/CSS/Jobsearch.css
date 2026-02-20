@@ -1,0 +1,907 @@
+/* ========================================= */
+/*                JOB SEARCH                 */
+/* ========================================= */
+
+.job-search {
+  width: 100%;
+  background: #ffffff;
+  padding: 80px 20px;
+}
+
+.job-search-container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.job-title {
+  font-size: 48px;
+  margin-bottom: 50px;
+  color: #1f2937;
+}
+
+/* FORM */
+.job-form {
+  display: flex;
+  gap: 25px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 240px;
+}
+
+.form-group label {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.form-group select {
+  height: 56px;
+  padding: 0 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: #6366f1;
+}
+
+/* BUTTON */
+.search-btn {
+  height: 56px;
+  padding: 0 35px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #8b5cf6, #4f46e5);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+/* ========================================= */
+/*           LIVE CELEBRATION               */
+/* ========================================= */
+
+.live-celebration {
+  width: 100%;
+  background: #ffffff;
+  padding: 100px 0;
+}
+
+.live-celebration-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+/* IMAGE */
+.live-celebration-image-wrapper {
+  position: relative;
+  flex: 1;
+}
+
+.live-celebration-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* PLAY BUTTON */
+.live-play-button {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #9f7aea, #5a67d8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 15px 40px rgba(90, 103, 216, 0.3);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.live-play-button:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.live-play-inner {
+  font-size: 34px;
+  color: #fff;
+}
+
+/* CONTENT */
+.live-celebration-content {
+  flex: 1;
+}
+
+.live-celebration-heading {
+  font-size: 54px;
+  font-weight: 600;
+  color: #1f2d3d;
+  line-height: 1.2;
+}
+
+.live-celebration-years {
+  font-size: 72px;
+  font-weight: 700;
+  margin: 15px 0 25px;
+  background: linear-gradient(90deg, #8b5cf6, #4f46e5);
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.live-celebration-text {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #4b5563;
+  margin-bottom: 18px;
+}
+
+.live-celebration-btn {
+  margin-top: 25px;
+  padding: 16px 40px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg, #8b5cf6, #4f46e5);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.live-celebration-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(79, 70, 229, 0.3);
+}
+/* ========================================= */
+/*              LIVE SERVICES               */
+/* ========================================= */
+
+.live-services {
+  width: 100%;
+  background: #ffffff;
+  padding: 100px 20px;
+}
+
+.live-services-container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* HEADER */
+.live-services-title {
+  font-size: 54px;
+  font-weight: 600;
+  color: #1f2d3d;
+}
+
+.live-services-underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #8b5cf6, #4f46e5);
+  margin: 20px 0 60px;
+}
+
+/* LAYOUT */
+.live-services-content {
+  display: flex;
+  gap: 60px;
+}
+
+.live-services-text {
+  flex: 1;
+  max-width: 300px;
+  font-size: 18px;
+  line-height: 1.9;
+  color: #374151;
+}
+
+.live-services-cards {
+  flex: 2;
+  display: flex;
+  gap: 30px;
+}
+
+/* CARD */
+.live-service-card {
+  flex: 1;
+  background: #f8f9fb;
+  padding: 45px 35px;
+  border-radius: 16px;
+  min-height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.35s ease;
+  cursor: pointer;
+}
+
+/* ICON */
+.live-service-icon {
+  font-size: 50px;
+  color: #1f2d3d;
+  transition: 0.3s ease;
+}
+
+/* TITLE */
+.live-service-card h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: #8b5cf6;
+  transition: 0.3s ease;
+}
+
+/* LINE */
+.live-service-line {
+  width: 60px;
+  height: 4px;
+  background: #1f2d3d;
+  transition: 0.3s ease;
+}
+
+/* LINK */
+.live-service-link {
+  font-size: 16px;
+  color: #000;
+  transition: 0.3s ease;
+}
+
+/* HOVER */
+.live-service-card:hover {
+  background: linear-gradient(135deg, #9f7aea, #5a67d8);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(90, 103, 216, 0.25);
+}
+
+.live-service-card:hover h3,
+.live-service-card:hover .live-service-icon,
+.live-service-card:hover .live-service-link {
+  color: #fff;
+}
+
+.live-service-card:hover .live-service-line {
+  background: #fff;
+}
+/* ========================================= */
+/*          EXPLORE SERVICES BUTTON         */
+/* ========================================= */
+
+.live-explore-seervices-btn-div {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.live-explore-seervices-btn  {
+  padding: 14px 40px;
+  font-size: 18px;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid #055bff;
+  color: #055bff;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.live-explore-seervices-btn:hover {
+  background: #055bff;
+  color: #fff;
+}
+
+/* ========================================= */
+/*              RESPONSIVE                  */
+/* ========================================= */
+
+@media (max-width: 1200px) {
+  .job-title,
+  .live-services-title {
+    font-size: 42px;
+  }
+
+  .live-celebration-heading {
+    font-size: 42px;
+  }
+
+  .live-celebration-years {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 992px) {
+  .live-celebration-container,
+  .live-services-content {
+    flex-direction: column;
+  }
+
+  .live-services-cards {
+    flex-direction: column;
+  }
+
+  .live-celebration-content {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  
+  .job-form {
+    flex-direction: column;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+
+  .live-services {
+    padding: 70px 20px;
+  }
+
+  .live-services-title,
+  .job-title {
+    font-size: 32px;
+  }
+
+  .live-celebration-heading {
+    font-size: 30px;
+  }
+
+  .live-celebration-years {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 480px) {
+  .live-celebration {
+    padding: 60px 20px;
+  }
+
+  .live-play-button {
+    width: 80px;
+    height: 80px;
+    left: 50%;
+  }
+
+  .live-play-inner {
+    font-size: 24px;
+  }
+
+  .live-explore-seervices-btn button {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+
+/* ========================================= */
+/*           LIVE FOCUS DOMAINS              */
+/* ========================================= */
+
+.live-focus {
+  width: 100%;
+  background: #055BFF;
+  padding: 100px 20px;
+  color: #ffffff;
+}
+
+.live-focus-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* ================= TITLE ================= */
+
+.live-focus-title {
+  font-size: 54px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.live-focus-underline {
+  width: 90px;
+  height: 4px;
+  background: #000;
+  margin-bottom: 70px;
+}
+
+/* ================= GRID ================= */
+
+.live-focus-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 120px;
+}
+
+/* ================= ITEM ================= */
+
+.live-focus-item {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 28px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.live-focus-item:hover {
+  opacity: 0.75;
+  padding-left: 10px;
+  color: black;
+  font-weight: 600;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Large screens */
+@media (max-width: 1200px) {
+  .live-focus-title {
+    font-size: 42px;
+  }
+
+  .live-focus-grid {
+    column-gap: 80px;
+  }
+
+  .live-focus-item {
+    font-size: 20px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .live-focus-grid {
+    grid-template-columns: 1fr;
+    row-gap: 0;
+  }
+
+  .live-focus-title {
+    font-size: 36px;
+  }
+
+  .live-focus-underline {
+    margin-bottom: 50px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .live-focus {
+    padding: 70px 20px;
+  }
+
+  .live-focus-title {
+    font-size: 30px;
+  }
+
+  .live-focus-item {
+    font-size: 18px;
+    padding: 22px 0;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .live-focus-title {
+    font-size: 26px;
+  }
+
+  .live-focus-item {
+    font-size: 16px;
+    padding: 18px 0;
+  }
+
+  .live-focus-underline {
+    width: 70px;
+  }
+}
+/* ========================================= */
+/*         LIVE FOCUS BUTTON                */
+/* ========================================= */
+
+.live-focus-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.live-focus-btn {
+  display: inline-block;
+  padding: 14px 40px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  text-decoration: none;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.live-focus-btn:hover {
+  /* background: #ffffff; */
+  color: black;
+  border-color: black;
+}
+@media (max-width: 768px) {
+  .live-focus-btn-wrapper {
+    margin-top: 50px;
+  }
+
+  .live-focus-btn {
+    padding: 14px 35px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .live-focus-btn {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+}
+/* =========================
+   SECTION
+========================= */
+
+.live-jobsearch-section {
+    width: 100%;
+    min-height: 100vh;
+    background: #e6e6e6;
+    padding: 120px 0 100px;
+}
+
+.live-jobsearch-container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.live-jobsearch-title {
+    font-size: 56px;
+    font-weight: 500;
+    color: #1e2a2a;
+    margin-bottom: 70px;
+}
+
+/* =========================
+   GRID LAYOUT
+========================= */
+
+.live-jobsearch-form-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    align-items: start;
+}
+
+/* =========================
+   FIELDS
+========================= */
+
+.live-jobsearch-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.live-jobsearch-field label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #1e2a2a;
+}
+
+.live-jobsearch-field select {
+    height: 55px;
+    border-radius: 8px;
+    border: 1px solid #0e2b3d;
+    padding: 0 15px;
+    font-size: 16px;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+/* =========================
+   BUTTON COLUMN
+========================= */
+
+.live-jobsearch-button-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* This fixes alignment */
+.live-jobsearch-label-space {
+    height: 26px;
+    margin-bottom: 10px;
+}
+
+.live-jobsearch-btn {
+    height: 55px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(90deg, #8f63d6, #4b55d6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.live-jobsearch-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.live-jobsearch-clear {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #1e2a2a;
+    cursor: pointer;
+    width: fit-content;
+}
+
+.live-jobsearch-clear:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+    .live-jobsearch-form-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .live-jobsearch-title {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .live-jobsearch-form-wrapper {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .live-jobsearch-btn {
+        width: 100%;
+    }
+}
+
+/* =========================
+   RESPONSIVE STYLES
+========================= */
+
+/* ---------- Tablets (1024px and below) ---------- */
+@media (max-width: 1024px) {
+
+  .job-search {
+    padding: 60px 30px;
+  }
+
+  .job-title {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+
+  .job-form {
+    gap: 20px;
+  }
+
+  .form-group {
+    min-width: 200px;
+  }
+
+  .search-btn {
+    padding: 0 28px;
+  }
+}
+
+
+/* ---------- Small Tablets (768px and below) ---------- */
+@media (max-width: 768px) {
+
+  .job-search {
+    padding: 50px 20px;
+  }
+
+  .job-title {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .job-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .search-btn {
+    width: 100%;
+  }
+}
+
+
+/* ---------- Mobile (480px and below) ---------- */
+@media (max-width: 480px) {
+
+  .job-search {
+    padding: 40px 16px;
+  }
+
+  .job-title {
+    font-size: 26px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .form-group label {
+    font-size: 14px;
+  }
+
+  .form-group select {
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .search-btn {
+    height: 50px;
+    font-size: 14px;
+  }
+
+}
+
+/* ========================================= */
+/*            RESPONSIVE STYLES             */
+/* ========================================= */
+
+/* ---------- Large Tablets (1024px ↓) ---------- */
+@media (max-width: 1024px) {
+
+  .live-services {
+    padding: 80px 30px;
+  }
+
+  .live-services-title {
+    font-size: 42px;
+  }
+
+  .live-services-content {
+    gap: 40px;
+  }
+
+  .live-services-text {
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  .live-services-cards {
+    flex-wrap: wrap;
+  }
+
+  .live-service-card {
+    min-height: 320px;
+  }
+}
+
+
+/* ---------- Tablets (768px ↓) ---------- */
+@media (max-width: 768px) {
+
+  .live-services {
+    padding: 70px 20px;
+  
+  }
+
+  .live-services-title {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .live-services-underline {
+    margin: 20px auto 50px;
+  }
+
+  .live-services-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .live-services-text {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .live-services-cards {
+    flex-wrap: wrap;
+    gap: 20px;
+   
+  }
+
+  .live-service-card {
+    flex: 1 1 calc(50% - 20px);
+    min-height: 300px;
+  }
+
+  .live-explore-seervices-btn-div {
+    margin-top: 3rem;
+  }
+}
+
+
+/* ---------- Mobile (480px ↓) ---------- */
+@media (max-width: 480px) {
+
+  .live-services {
+    padding: 60px 16px;
+  }
+
+  .live-services-title {
+    font-size: 26px;
+  }
+
+  .live-services-underline {
+    width: 60px;
+    height: 3px;
+  }
+
+  .live-service-card {
+    flex: 1 1 100%;
+    padding: 35px 25px;
+    min-height: 230px;
+  }
+
+  .live-service-card h3 {
+    font-size: 20px;
+  }
+
+  .live-service-icon {
+    font-size: 36px;
+  }
+
+  .live-service-link {
+    font-size: 14px;
+  }
+
+  .live-explore-seervices-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+}

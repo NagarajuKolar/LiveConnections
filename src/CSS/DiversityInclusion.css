@@ -1,0 +1,801 @@
+/* ===================================== */
+/* LIVE FADE UP ANIMATION */
+/* ===================================== */
+
+.live-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.live-fade-up.live-fade-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===================================== */
+/* LIVE DIVERSITY PAGE */
+/* ===================================== */
+
+.live-diversity-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===================================== */
+/* HERO SECTION */
+/* ===================================== */
+
+.live-diversity-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.live-diversity-hero-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.live-diversity-hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: auto;
+  margin-top: 6rem;
+}
+
+.live-diversity-hero-content {
+  max-width: 650px;
+}
+
+.live-diversity-hero-title {
+  font-size: 60px;
+  line-height: 1.1;
+  font-weight: 600;
+  color: #1f2d3d;
+}
+
+.live-diversity-hero-desc {
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #34495e;
+  max-width: 520px;
+}
+
+.live-diversity-hero-btn {
+  margin-top: 40px;
+  padding: 16px 42px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 2px solid #2f5bea;
+  background: transparent;
+  color: #2f5bea;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.live-diversity-hero-btn:hover {
+  background: transparent;
+  color: black;
+  border-color: black;
+}
+
+/* ===================================== */
+/* CTA GRADIENT SECTION */
+/* ===================================== */
+
+.live-diversity-cta {
+  width: 100%;
+  padding: 140px 20px;
+  background: linear-gradient(135deg, #a678d8 0%, #6f7ae5 100%);
+  display: flex;
+  justify-content: center;
+}
+
+.live-diversity-cta-container {
+  max-width: 1100px;
+  text-align: left;
+}
+
+.live-diversity-cta-title {
+  font-size: 40px;
+  line-height: 1.3;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.live-diversity-cta-link {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.live-diversity-cta-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.live-diversity-cta-link:hover::after {
+  width: 100%;
+}
+
+/* ===================================== */
+/* TABLET RESPONSIVE */
+/* ===================================== */
+
+@media (max-width: 1024px) {
+
+  .live-diversity-hero {
+    height: 650px;
+  }
+
+  .live-diversity-hero-title {
+    font-size: 42px;
+  }
+
+  .live-diversity-hero-desc {
+    font-size: 18px;
+  }
+
+  .live-diversity-cta-title {
+    font-size: 36px;
+  }
+}
+
+/* ===================================== */
+/* MOBILE RESPONSIVE */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+  .live-diversity-hero {
+    height: 250px;
+    min-height: 10vh;
+    background-size: cover;
+    background-position: center top;
+  }
+
+  .live-diversity-hero-container {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+  }
+
+  .live-diversity-hero-title {
+    font-size: 18px;
+    max-width: 60%;
+  }
+
+  .live-diversity-hero-desc {
+    display: none;
+  }
+
+  .live-diversity-hero-btn {
+    margin-top: 10px;
+    width: 60%;
+    padding: 12px;
+  }
+
+  .live-diversity-cta {
+    padding: 80px 20px;
+  }
+
+  .live-diversity-cta-title {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  .live-diversity-cta-link {
+    font-size: 16px;
+  }
+}
+
+/* ===================================== */
+/* INFO SPLIT SECTION */
+/* ===================================== */
+
+.live-diversity-info {
+  width: 100%;
+  padding: 120px 40px;
+  background: #f4f4f4;
+}
+
+.live-diversity-info-container {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+/* LEFT SIDE */
+.live-diversity-info-left {
+  flex: 1;
+}
+
+.live-diversity-info-highlight {
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #8a6bd6; /* purple shade */
+}
+
+/* RIGHT SIDE */
+.live-diversity-info-right {
+  flex: 1;
+}
+
+.live-diversity-info-right p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #1f2d3d;
+  margin-bottom: 25px;
+}
+@media (max-width: 1024px) {
+
+  .live-diversity-info-container {
+    gap: 50px;
+  }
+
+  .live-diversity-info-highlight {
+    font-size: 24px;
+  }
+
+  .live-diversity-info-right p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .live-diversity-info {
+    padding: 80px 20px;
+  }
+
+  .live-diversity-info-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .live-diversity-info-highlight {
+    font-size: 20px;
+  }
+
+  .live-diversity-info-right p {
+    font-size: 15px;
+  }
+}
+/* ===================================== */
+/* STATS SECTION */
+/* ===================================== */
+
+.live-diversity-stats {
+  width: 100%;
+  padding: 120px 40px;
+  background: #f2f2f2;
+}
+
+.live-diversity-stats-wrapper {
+  max-width: 1300px;
+  margin: auto;
+  border: 1px solid #b08df5;
+  padding: 80px 60px;
+}
+
+.live-diversity-stats-heading {
+  font-size: 28px;
+  line-height: 1.5;
+  margin-bottom: 60px;
+  color: #1f2d3d;
+  max-width: 900px;
+}
+
+/* GRID */
+
+.live-diversity-stats-grid {
+  display: flex;
+  gap: 40px;
+}
+
+/* CARD */
+
+.live-diversity-stat-card {
+  flex: 1;
+  background: #e6e6e6;
+  padding: 60px 40px;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.live-diversity-stat-number {
+  font-size: 70px;
+  font-weight: 600;
+  color: #8a6bd6;
+  margin-bottom: 20px;
+}
+
+.live-diversity-stat-card p {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1f2d3d;
+}
+
+/* BUTTON */
+
+.live-diversity-stats-btn-wrapper {
+  margin-top: 80px;
+  text-align: center;
+}
+/* ===================================== */
+/* TABLET */
+/* ===================================== */
+
+@media (max-width: 1024px) {
+
+  .live-diversity-stats-wrapper {
+    padding: 60px 40px;
+  }
+
+  .live-diversity-stats-heading {
+    font-size: 22px;
+  }
+
+  .live-diversity-stat-number {
+    font-size: 56px;
+  }
+
+  .live-diversity-stat-card p {
+    font-size: 18px;
+  }
+}
+
+/* ===================================== */
+/* MOBILE */
+/* ===================================== */
+
+@media (max-width: 768px) {
+
+  .live-diversity-stats {
+    padding: 80px 20px;
+  }
+
+  .live-diversity-stats-wrapper {
+    padding: 40px 20px;
+  }
+
+  .live-diversity-stats-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .live-diversity-stat-card {
+    padding: 40px 25px;
+    min-height: auto;
+  }
+
+  .live-diversity-stat-number {
+    font-size: 48px;
+  }
+
+  .live-diversity-stat-card p {
+    font-size: 16px;
+  }
+
+  .live-diversity-stats-btn-wrapper {
+    margin-top: 50px;
+  }
+}
+/* ===================================== */
+/* SPLIT CTA SECTION */
+/* ===================================== */
+
+.live-diversity-split {
+  width: 100%;
+  display: flex;
+  min-height: 600px;
+  padding: 0;
+}
+
+/* LEFT SIDE */
+
+.live-diversity-split-left {
+  flex: 1;
+  background: #055BFF;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+
+.live-diversity-split-content {
+  max-width: 520px;
+}
+
+.live-diversity-split-title {
+  font-size: 40px;
+  line-height: 1.3;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.live-diversity-split-btn {
+  margin-top: 40px;
+  padding: 16px 40px;
+  background: #f2f2f2;
+  color: #8a6bd6;
+  /* border-color: #055BFF; */
+  border: none;
+  border-radius: 6px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.live-diversity-split-btn:hover {
+  background: transparent;
+  transform: translateY(-3px);
+  color: #ffffff;
+  border-color: #ffffff;
+  border: 1px solid #ffffff;
+}
+
+/* RIGHT SIDE */
+
+.live-diversity-split-right {
+  flex: 1;
+  overflow: hidden;
+}
+
+.live-diversity-split-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 1024px) {
+
+  .live-diversity-split-left {
+    padding: 60px;
+  }
+
+  .live-diversity-split-title {
+    font-size: 30px;
+  }
+
+  .live-diversity-split-btn {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+
+  .live-diversity-split {
+    flex-direction: column;
+  }
+
+  .live-diversity-split-left {
+    padding: 60px 25px;
+  }
+
+  .live-diversity-split-title {
+    font-size: 22px;
+  }
+
+  .live-diversity-split-btn {
+    width: 100%;
+    padding: 14px;
+  }
+
+  .live-diversity-split-right {
+    height: 300px;
+  }
+}
+/* ===================================== */
+/* INITIATIVES SECTION */
+/* ===================================== */
+
+.live-diversity-initiatives {
+  width: 100%;
+  padding: 120px 60px;
+  background: #ffffff;
+}
+
+.live-diversity-initiatives-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+.l-d-i-header{
+    max-width: 80%;
+    padding-left: 45px;
+    
+}
+.live-diversity-initiatives-title {
+  font-size: 27px;
+  line-height: 1.5;
+  color: #8a6bd6;
+  margin-bottom: 35px;
+}
+
+/* LEFT COLUMN */
+.live-diversity-initiatives-left p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #1f2d3d;
+  margin-bottom: 25px;
+}
+
+.live-diversity-initiatives-btn {
+  margin-top: 40px;
+}
+
+/* RIGHT COLUMN */
+
+.live-diversity-initiatives-heading {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: #1f2d3d;
+}
+
+/* GRID */
+
+.live-diversity-initiatives-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+/* CARD */
+
+.live-diversity-initiative-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  padding: 0px 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+  /* min-height: 180px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.live-diversity-initiative-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+/* ICON */
+
+.live-initiative-icon {
+
+   flex: 0 0 30%;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+  color: #8a6bd6;
+}
+
+.live-diversity-initiative-card p {
+
+    flex: 0 0 70%; 
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2d3d;
+  text-align: left;
+}
+@media (max-width: 1024px) {
+
+  .live-diversity-initiatives {
+    padding: 100px 40px;
+  }
+
+  .live-diversity-initiatives-container {
+    gap: 50px;
+  }
+  .l-d-i-header{
+    max-width: 100%;
+    padding-left: 0px;
+  
+    
+}
+
+  .live-diversity-initiatives-title {
+    font-size: 26px;
+  }
+
+  .live-diversity-initiatives-left p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+
+  .live-diversity-initiatives {
+    padding: 80px 20px;
+  }
+
+  .live-diversity-initiatives-container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .live-diversity-initiatives-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  
+
+  .live-diversity-initiative-card {
+    flex-direction: column;   
+    text-align: center;
+    align-items: center;
+    padding: 10px ;
+  }
+
+  .live-initiative-icon {
+    flex: none;              /* remove 30% width */
+    margin-bottom: 15px;
+  }
+
+  .live-diversity-initiative-card p {
+    flex: none;              /* remove 70% width */
+    text-align: center;
+  }
+
+
+
+  .live-diversity-initiatives-title {
+    font-size: 22px;
+  }
+}
+
+
+/* ===================================== */
+/* SOLUTIONS SPLIT SECTION */
+/* ===================================== */
+
+.live-diversity-solutions {
+  width: 100%;
+  display: flex;
+  min-height: 500px;
+  padding: 0;
+}
+
+/* LEFT SIDE */
+
+.live-diversity-solutions-left {
+  flex: 1;
+  background: #f3f3f3;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+
+/* RIGHT SIDE */
+
+.live-diversity-solutions-right {
+  flex: 1;
+  background: linear-gradient(135deg, #8a6bd6, #6e79e6);
+  display: flex;
+  align-items: center;
+  padding: 80px;
+}
+
+/* CONTENT */
+
+.live-diversity-solutions-content {
+  max-width: 550px;
+}
+
+.live-diversity-solutions-content h2 {
+  font-size: 36px;
+  line-height: 1.4;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+/* LEFT TEXT COLOR */
+
+.live-diversity-solutions-left h2 {
+  color: #1f2d3d;
+}
+
+/* RIGHT TEXT COLOR */
+
+.live-diversity-solutions-right h2 {
+  color: #ffffff;
+}
+
+/* LINK */
+
+.live-diversity-solutions-link {
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* LEFT LINK */
+
+.live-diversity-solutions-left .live-diversity-solutions-link {
+  color: #8a6bd6;
+}
+
+/* RIGHT LINK */
+
+.live-diversity-solutions-right .live-diversity-solutions-link {
+  color: #ffffff;
+}
+
+/* UNDERLINE */
+
+.live-diversity-solutions-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 35px;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.live-diversity-solutions-link:hover::after {
+  width: 100%;
+}
+@media (max-width: 1024px) {
+
+  .live-diversity-solutions-content h2 {
+    font-size: 28px;
+  }
+
+  .live-diversity-solutions-left,
+  .live-diversity-solutions-right {
+    padding: 60px;
+  }
+}
+@media (max-width: 768px) {
+
+  .live-diversity-solutions {
+    flex-direction: column;
+  }
+
+  .live-diversity-solutions-left,
+  .live-diversity-solutions-right {
+    padding: 60px 25px;
+  }
+
+  .live-diversity-solutions-content h2 {
+    font-size: 22px;
+  }
+
+}

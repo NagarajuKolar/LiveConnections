@@ -1,0 +1,230 @@
+.cont-form-wrapper {
+  max-width: 1250px;
+    padding: 40px 80px;
+}
+
+.cont-form-title {
+  font-size: 44px;
+  color: #8b6bd6;
+  margin-bottom: 14px;
+}
+
+.cont-form-subtitle {
+  margin-bottom: 30px;
+  color: #444;
+  font-family: "Manrope", sans-serif;
+}
+
+
+
+.cont-form-toggle {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.cont-form-btn {
+  padding: 14px 30px;
+  border-radius: 8px;
+  border: 2px solid #6b5cff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 19px;
+}
+
+.cont-form-btn.active {
+  background: linear-gradient(90deg, #8b6bd6, #5a49e3);
+  color: white;
+  border: none;
+}
+
+/* Form layout */
+
+.cont-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.cont-form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.cont-form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cont-form-group.full {
+  width: 100%;
+}
+
+.cont-form-label {
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Manrope", sans-serif;
+}
+
+
+.cont-form-input {
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid #3e3737;
+    font-size: 17px;
+}
+
+.cont-form-textarea {
+  min-height: 120px;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.cont-form-input option {
+  font-size: 17px;
+  padding: 10px;
+}
+.cont-form-group.half {
+  flex: 0 0 calc(50% - 10px);
+}
+
+
+.cont-form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  cursor: pointer;
+  padding-right: 45px;
+
+
+}
+
+
+
+.cont-form-select-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.cont-form-select-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* click passes to select */
+  font-size: 20px;
+  color: #3e3737;
+}
+
+
+
+
+.cont-form-terms {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  font-family: "Manrope", sans-serif;
+}
+
+
+
+.cont-form-submit {
+  width: 200px;
+  padding: 14px;
+  text-align: center;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #8b6bd6, #5a49e3);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 20px;
+}
+@media (max-width: 900px) {
+
+  .cont-form-wrapper {
+    padding: 30px 40px;
+  }
+
+  .cont-form-title {
+    font-size: 36px;
+  }
+
+  .cont-form-btn {
+    font-size: 17px;
+    padding: 12px 24px;
+  }
+
+
+
+  .cont-form-row {
+    flex-direction: column;
+  }
+
+  .cont-form-group.half {
+    flex: 1 1 100%;
+  }
+
+  .cont-form-submit {
+    width: 100%;
+  }
+}
+@media (max-width: 572px) {
+
+  .cont-form-wrapper {
+    padding: 25px 18px;
+  }
+
+  .cont-form-title {
+    font-size: 28px;
+  }
+
+  .cont-form-subtitle {
+    font-size: 14px;
+  }
+
+  /* Toggle buttons stack */
+
+  .cont-form-toggle {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cont-form-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .cont-form-label {
+    font-size: 15px;
+  }
+
+  .cont-form-input {
+    font-size: 16px;
+    padding: 14px;
+  }
+
+  .cont-form-textarea {
+    padding: 14px;
+  }
+
+  .cont-form-terms {
+    font-size: 14px;
+    align-items: flex-start;
+  }
+
+  .cont-form-submit {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .cont-form-select-icon {
+    font-size: 18px;
+    right: 12px;
+  }
+}
