@@ -1,6 +1,8 @@
 import React from 'react'
 import '../CSS/Service3.css'
+import { useNavigate } from 'react-router-dom'
 function Service3() {
+    const navigate=useNavigate()
     return (
         <>
             <section className="serv-scope">
@@ -28,7 +30,7 @@ function Service3() {
                             There is growing adoption of the model by smaller firms too.
                         </p>
 
-                        <div className="serv-btn">Talk to our Expert</div>
+                        <div className="serv-btn" onClick={()=>navigate('/contact')}>Talk to our Expert</div>
                     </div>
 
                     
@@ -137,7 +139,7 @@ function Service3() {
                 </div>
 
                
-                <div className="serv-rpo-btn serv-btn serv-fadeup">
+                <div className="serv-rpo-btn serv-btn serv-fadeup" onClick={()=>navigate('/contact')}>
                     Talk to our Expert
                 </div>
 

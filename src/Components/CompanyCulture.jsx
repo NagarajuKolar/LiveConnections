@@ -4,8 +4,10 @@ import "../CSS/CompanyCulture.css";
 import { alljobs } from "../Data/Jobpost";
 import Jobposting from "./Jobposting";
 import diversity from '../assets/diversity.png'
+import { useNavigate } from "react-router-dom";
 
 function CompanyCulture() {
+  const navigate=useNavigate()
   return (
     <>
 
@@ -68,7 +70,7 @@ function CompanyCulture() {
               to our client needs
             </p>
 
-            <button className="connect-di-btn">
+            <button className="connect-di-btn"  onClick={()=>navigate('/contact')}>
               Talk to Us
             </button>
           </div>
@@ -83,7 +85,7 @@ function CompanyCulture() {
               See how we can help you.
             </p>
 
-            <button className="connect-di-cta-btn">
+            <button className="connect-di-cta-btn" onClick={()=>navigate('/domains')}>
               Explore Domain Specialties
             </button>
 

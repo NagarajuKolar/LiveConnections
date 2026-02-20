@@ -100,7 +100,6 @@ const CompanyTimeline = () => {
     return (
         <section className="live-company-section" ref={sectionRef}>
 
-            {/* ================= DESKTOP PINNED VERSION ================= */}
             <div
                 className="live-scroll-area"
                 style={{ height: `${timelineData.length * 80}vh` }}
@@ -134,7 +133,7 @@ const CompanyTimeline = () => {
                 </div>
             </div>
 
-            {/* ================= MOBILE / TABLET ACCORDION ================= */}
+
             <div className="live-mobile-accordion">
                 {timelineData.map((item, index) => (
                     <AccordionItem key={index} item={item} />
@@ -147,7 +146,6 @@ const CompanyTimeline = () => {
 
 export default CompanyTimeline;
 
-/* ================= ACCORDION COMPONENT ================= */
 
 const AccordionItem = ({ item }) => {
     const [open, setOpen] = useState(item.year === "1996");

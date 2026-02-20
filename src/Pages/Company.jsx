@@ -5,7 +5,9 @@ import '../CSS/Company.css'
 import CompanyTimeline from "../Components/CompanyTimeline";
 import CoreTeam from "../Components/CoreTeam";
 import heroBanner from '../assets/herobanner.png'
+import { useNavigate } from "react-router-dom";
 function Company() {
+    const navigate=useNavigate()
 
     const label1 = useRef(null);
     const label2 = useRef(null);
@@ -120,7 +122,7 @@ function Company() {
                             in Corporate India.
                         </p>
 
-                        <button className="live-company-value-btn">
+                        <button className="live-company-value-btn" onClick={()=>navigate('/contact')}>
                             Talk to Us
                         </button>
 

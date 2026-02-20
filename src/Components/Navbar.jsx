@@ -9,7 +9,6 @@ function Navbar() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
-  /* DESKTOP LINKS (NO HOME) */
   const desktopLinks = [
     { name: "Company", path: "/company" },
     { name: "Services", path: "/services" },
@@ -23,6 +22,8 @@ function Navbar() {
     { name: "Home", path: "/" },
     ...desktopLinks
   ];
+
+  
 
   return (
     <header className="navbar">

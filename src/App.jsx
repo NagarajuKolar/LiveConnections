@@ -17,27 +17,29 @@ import FindJobPage from './Pages/FindJobPage';
 import DiversityInclusion from './Pages/DiversityInclusion';
 import DomainSpecialist from './Pages/DomainSpecialist';
 import Footer from './Components/Footer';
+import ScrolltoTop from './Components/ScrolltoTop';
 function App() {
 
 
   return (
     <>
+      <ScrolltoTop />
       <Navbar />
 
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/company" element={<Company/>} />
+        <Route path="/company" element={<Company />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/domains" element={<DomainSpecialist/>} />
-        <Route path="/diversity-inclusion" element={<DiversityInclusion/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path='/findjobs' element={<FindJobPage/>}/>
-        <Route path='/article/:articleslug'element={<Article/>}/>
-        <Route path='/jobs/:jobslug' element={<Jobs/>}/>
+        <Route path="/domains" element={<DomainSpecialist />} />
+        <Route path="/diversity-inclusion" element={<DiversityInclusion />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path='/findjobs' element={<FindJobPage />} />
+        <Route path='/article/:articleslug' element={<Article />} />
+        <Route path='/jobs/:jobslug' element={<Jobs />} />
       </Routes>
 
-      <Footer/>
+      <Footer />
 
 
 

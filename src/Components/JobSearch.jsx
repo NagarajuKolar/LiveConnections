@@ -11,13 +11,16 @@ import {
   UserRoundSearch,
   Crown
 } from "lucide-react";
+import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 function JobSearch() {
     const [formData, setFormData] = useState({
         title: "",
         location: "",
         industry: "",
     });
+    const navigate=useNavigate()
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -140,7 +143,7 @@ function JobSearch() {
                                 We extend our Services to multiple sectors and functions across various geographies.
                             </p>
 
-                            <button className="live-celebration-btn">
+                            <button className="live-celebration-btn" onClick={()=>navigate('/company')}>
                                 Know More
                             </button>
                         </div>
@@ -257,9 +260,9 @@ function JobSearch() {
                     </div>
                 </div>
                 <div className="live-explore-seervices-btn-div">
-                    <a href="/services" className="live-explore-seervices-btn">
+                    <Link to="/services" className="live-explore-seervices-btn">
                         Explore Services
-                    </a>
+                    </Link>
                 </div>
 
             </section>
@@ -272,7 +275,7 @@ function JobSearch() {
 
                     <div className="live-focus-grid">
                         {domains.map((item, index) => (
-                            <div key={index} className="live-focus-item">
+                            <div key={index} className="live-focus-item" onClick={()=>navigate('/domains')}>
                                 {item}
                             </div>
                         ))}

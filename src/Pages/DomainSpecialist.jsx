@@ -10,7 +10,9 @@ import domain21 from '../assets/domain21.png'
 import useLiveFadeUp from '../Data/Fadeup';
 import { useState } from 'react'
 import '../CSS/DomainSpecialist.css'
+import { useNavigate } from 'react-router-dom'
 function DomainSpecialist() {
+    const navigate=useNavigate()
     useLiveFadeUp();
     const [expanded, setExpanded] = useState(false);
     return (
@@ -35,7 +37,7 @@ function DomainSpecialist() {
                                 market knowledge and functional expertise.
                             </p>
 
-                            <button className="live-domain-hero-btn live-fade-up live-delay-3">
+                            <button className="live-domain-hero-btn live-fade-up live-delay-3"onClick={()=>navigate('/contact')}>
                                 Talk to our Experts
                             </button>
 
@@ -58,7 +60,7 @@ function DomainSpecialist() {
                     </div>
                 </section>
 
-                {/* ================= DOMAIN DETAIL SECTION ================= */}
+                
                 <section className="live-domain-detail">
 
                     <div className="live-domain-detail-left live-fade-up live-delay-1">
@@ -81,7 +83,7 @@ function DomainSpecialist() {
 
                 </section>
 
-                {/* ================= CONTENT SECTION ================= */}
+            
                 <section className="live-domain-content">
 
                     <div className="live-domain-content-left">
@@ -89,7 +91,7 @@ function DomainSpecialist() {
                             With over two decades of hiring talents in the automotive sector, we understand the marketplace like no other!
                         </h3>
 
-                        <button className="live-domain-purple-btn">
+                        <button className="live-domain-purple-btn" onClick={()=>navigate('/contact')}>
                             Talk to our Expert
                         </button>
                     </div>
@@ -120,7 +122,6 @@ function DomainSpecialist() {
 
                 </section>
 
-                {/* ================= BANKING SECTION ================= */}
                 <section className="live-domain-split">
 
                     <div className="live-domain-split-image">
@@ -142,7 +143,6 @@ function DomainSpecialist() {
 
                 </section>
 
-                {/* ================= CONTENT SECTION ================= */}
                 <section className="live-domain-content" id="ready">
 
                     <div className="live-domain-content-left">
@@ -150,7 +150,7 @@ function DomainSpecialist() {
                             With the constantly evolving digital landscape, financial institutions have endured a lot to meet the demands of its customers. Equally placing importance its to human resources. LiveC has placed some of the best known talents in the market today
                         </h3>
 
-                        <button className="live-domain-purple-btn">
+                        <button className="live-domain-purple-btn" onClick={()=>navigate('/contact')}>
                             Talk to our Expert
                         </button>
                     </div>
@@ -181,7 +181,6 @@ function DomainSpecialist() {
 
                 </section>
 
-                {/* ================= DOMAIN DETAIL SECTION ================= */}
                 <section className="live-domain-detail">
 
                     <div className="live-domain-detail-left live-fade-up live-delay-1" id="informavtive" style={{ backgroundColor: "#1B3446" }}>
@@ -202,7 +201,7 @@ function DomainSpecialist() {
 
                 </section>
 
-                {/* ================= TECHNOLOGY CONTENT SECTION ================= */}
+
                 <section className="live-domain-tech">
 
                     <div className="live-domain-tech-col live-domain-tech-left">
@@ -210,7 +209,7 @@ function DomainSpecialist() {
                             We work with Tech Services and Captive centres and have teams that specialise in lateral and leadership hiring where we work across domains and functions.
                         </h3>
 
-                        <button className="live-domain-purple-btn live-domain-tech-btn">
+                        <button className="live-domain-purple-btn live-domain-tech-btn"onClick={()=>navigate('/contact')}>
                             Talk to our Expert
                         </button>
                     </div>
@@ -252,7 +251,7 @@ function DomainSpecialist() {
                     </div>
 
                 </section>
-                {/* ================= SHIPPING IMAGE SECTION ================= */}
+
                 <section className="live-domain-shipping">
 
                     <img
@@ -272,7 +271,7 @@ function DomainSpecialist() {
 
                 </section>
 
-                {/* ================= TECHNOLOGY CONTENT SECTION ================= */}
+                
                 <section className="live-domain-tech">
 
                     <div className="live-domain-tech-col live-domain-tech-left">
@@ -280,7 +279,7 @@ function DomainSpecialist() {
                             We have been partnering with leading (traditional and new age) organizations in this industry since our inception.
                         </h3>
 
-                        <button className="live-domain-purple-btn live-domain-tech-btn">
+                        <button className="live-domain-purple-btn live-domain-tech-btn"onClick={()=>navigate('/contact')}>
                             Talk to our Expert
                         </button>
                     </div>
@@ -304,7 +303,7 @@ function DomainSpecialist() {
 
                 </section>
 
-                {/* ================= BANKING SECTION ================= */}
+           
                 <section className="live-domain-split" >
 
                     <div className="live-domain-split-image">
@@ -326,14 +325,14 @@ function DomainSpecialist() {
 
                 </section>
 
-                {/* ================= CONTENT SECTION ================= */}
+
                 <section className="live-domain-content" style={{ backgroundColor: "#EDEDED" }}>
 
                     <div className="live-domain-content-left">
                         <h3 className="live-domain-highlight">
                             Resourcing for Diversity & Inclusion is one of the most discussed topics in organisations today. Are you looking for a D&I practice partner? We’re happy to help you.                    </h3>
 
-                        <button className="live-domain-purple-btn">
+                        <button className="live-domain-purple-btn"onClick={()=>navigate('/contact')}>
                             Talk to our Expert
                         </button>
                     </div>

@@ -3,11 +3,13 @@ import Footprint from '../Components/Footprint'
 import Jobposting from '../Components/Jobposting'
 import TeamLive from '../Components/TeamLive'
 import { recentjobs } from '../Data/Jobpost'
+import { useNavigate } from 'react-router-dom'
 import desktopBanner from '../assets/deskbanner.png'
 import mobileBanner from '../assets/mobBanner.png'
 import JobSearch from '../Components/JobSearch'
 import '../CSS/Home.css'
 function Home() {
+    const navigate=useNavigate();
     return (
         <>
 
@@ -31,11 +33,11 @@ function Home() {
                         </p>
 
                         <div className="LIVE-hero-buttons">
-                            <button className="LIVE-btn-primary">
+                            <button className="LIVE-btn-primary" onClick={()=>navigate('/company')}>
                                 Know More About Us
                             </button>
 
-                            <button className="LIVE-btn-secondary">
+                            <button className="LIVE-btn-secondary"onClick={()=>navigate('/services')}>
                                 Explore Our Services
                             </button>
                         </div>

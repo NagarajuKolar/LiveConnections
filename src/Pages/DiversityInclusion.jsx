@@ -3,14 +3,16 @@ import '../CSS/DiversityInclusion.css'
 import diversityhero from '../assets/diversityhero.png'
 import diversityCta from "../assets/diversitycta.png";
 import useLiveFadeUp from '../Data/Fadeup';
+import { useNavigate } from 'react-router-dom';
 
 function DiversityInclusion() {
+    const navigate=useNavigate()
      useLiveFadeUp();
   return (
     <>
             <div className="live-diversity-page">
     
-                {/* ================= HERO SECTION ================= */}
+
                 <section
                     className="live-diversity-hero"
                     style={{ backgroundImage: `url(${diversityhero})` }}
@@ -30,7 +32,7 @@ function DiversityInclusion() {
                                 inclusive hiring process and more.
                             </p>
     
-                            <button className="live-diversity-hero-btn live-fade-up live-delay-3">
+                            <button className="live-diversity-hero-btn live-fade-up live-delay-3" onClick={()=>navigate('/contact')}>
                                 Talk to our Experts
                             </button>
     
@@ -38,7 +40,7 @@ function DiversityInclusion() {
                     </div>
                 </section>
     
-                {/* ================= CTA GRADIENT SECTION ================= */}
+                
     
                 <section className="live-diversity-cta">
                     <div className="live-diversity-cta-container">
@@ -49,14 +51,14 @@ function DiversityInclusion() {
                             Are you looking to boost your performance?
                         </h2>
     
-                        <a href="/contact" className="live-diversity-cta-link live-fade-up live-delay-2">
+                        <a href="/contact" className="live-diversity-cta-link live-fade-up live-delay-2"onClick={()=>navigate('/contact')}>
                             Contact Us
                         </a>
     
                     </div>
                 </section>
     
-                {/* ================= INFO SPLIT SECTION ================= */}
+                
     
                 <section className="live-diversity-info">
                     <div className="live-diversity-info-container">
@@ -92,7 +94,7 @@ function DiversityInclusion() {
                     </div>
                 </section>
     
-                {/* ================= STATS SECTION ================= */}
+      
     
                 <section className="live-diversity-stats">
                     <div className="live-diversity-stats-wrapper">
@@ -128,14 +130,13 @@ function DiversityInclusion() {
                     </div>
     
                     <div className="live-diversity-stats-btn-wrapper live-fade-up live-delay-2">
-                        <button className="live-diversity-hero-btn">
+                        <button className="live-diversity-hero-btn"onClick={()=>navigate('/contact')}>
                             Talk to our Experts
                         </button>
                     </div>
     
                 </section>
     
-                {/* ================= SPLIT CTA SECTION ================= */}
     
                 <section className="live-diversity-split">
     
@@ -149,7 +150,7 @@ function DiversityInclusion() {
                                 Would you like to connect with one of our executives near you?
                             </h2>
     
-                            <button className="live-diversity-split-btn live-fade-up live-delay-2">
+                            <button className="live-diversity-split-btn live-fade-up live-delay-2"onClick={()=>navigate('/contact')}>
                                 Request A Call Back
                             </button>
     
@@ -194,7 +195,7 @@ function DiversityInclusion() {
                             </p>
     
                             <div className="live-diversity-initiatives-btn live-fade-up live-delay-3">
-                                <button className="live-diversity-hero-btn">
+                                <button className="live-diversity-hero-btn" onClick={()=>navigate('/contact')}>
                                     Talk to our Expert
                                 </button>
                             </div>
@@ -238,7 +239,7 @@ function DiversityInclusion() {
     
                 </section>
     
-                {/* ================= SOLUTIONS SPLIT SECTION ================= */}
+             
     
                 <section className="live-diversity-solutions">
     
@@ -253,7 +254,7 @@ function DiversityInclusion() {
                                 See how we can help you.
                             </h2>
     
-                            <a href="#" className="live-diversity-solutions-link live-fade-up live-delay-2">
+                            <a href="#" className="live-diversity-solutions-link live-fade-up live-delay-2"onClick={()=>navigate('/domains')}>
                                 Explore Our Specialities
                             </a>
     

@@ -143,7 +143,7 @@ const CoreTeam = () => {
                 </div>
             </div>
 
-            {/* ================= MODAL ================= */}
+            
             {selectedMember && (
                 <div
                     className="live-core-modal-overlay"

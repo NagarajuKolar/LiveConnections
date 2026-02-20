@@ -2,7 +2,9 @@ import React from 'react'
 import servicebanner3 from '../assets/servicebanner3.svg'
 import servicebanner4 from '../assets/servicebanner4.png'
 import '../CSS/Service2.css'
+import { useNavigate } from 'react-router-dom'
 function Service2() {
+    const navigate=useNavigate()
     return (
         <>
             <section className="serv-interview">
@@ -33,7 +35,7 @@ function Service2() {
                     </p>
 
                     {/* DIV Button */}
-                    <div className="serv-btnn serv-fadeup">
+                    <div className="serv-btnn serv-fadeup" onClick={()=>navigate('/contact')}>
                         Talk to our Expert
                     </div>
 
@@ -79,7 +81,7 @@ function Service2() {
                     </p>
 
                     
-                    <div className="serv-btnn serv-fadeup">
+                    <div className="serv-btnn serv-fadeup" onClick={()=>navigate('/contact')}>
                         Talk to our Expert
                     </div>
 
@@ -124,7 +126,7 @@ function Service2() {
                     </p>
 
 
-                    <div className="serv-btnn serv-fadeup">
+                    <div className="serv-btnn serv-fadeup" onClick={()=>navigate('/contact')}>
                         Talk to our Expert
                     </div>
 
@@ -145,7 +147,7 @@ function Service2() {
                             India that could come to your aid.
                         </p>
 
-                        <div className="serv-incubating-link serv-fadeup">
+                        <div className="serv-incubating-link serv-fadeup" onClick={()=>navigate('/contact')}>
                             Contact Us
                         </div>
 
