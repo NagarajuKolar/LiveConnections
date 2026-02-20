@@ -147,10 +147,8 @@
 .live-celebration-years {
   font-size: 72px;
   font-weight: 700;
-  margin: 15px 0 25px;
-  background: linear-gradient(90deg, #8b5cf6, #4f46e5);
-  /* -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  margin: 5px 0 25px;
+
 }
 
 .live-celebration-text {

@@ -97,7 +97,7 @@ function Jobposting({ jobs }) {
       <div className="show-all-container">
         <div
           className="show-all-btn"
-          onClick={() => navigate("/jobs")}
+          onClick={() => navigate("/findjobs")}
         >
           Show All Jobs
         </div>
