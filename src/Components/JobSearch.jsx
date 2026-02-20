@@ -1,6 +1,6 @@
 import React from 'react'
 import { FiUser, FiMessageCircle, FiTarget } from "react-icons/fi";
-import '../CSS/JobSearch.css'
+import '../CSS/Jobsearch.css'
 import womanimg from '../assets/womanimg.png'
 import { useState } from 'react';
 function JobSearch() {
