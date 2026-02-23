@@ -53,9 +53,17 @@ const timelineData = [
     },
 ];
 
-const CompanyTimeline = () => {
+const CompanyTimeline = ({ nextRef }) => {
     const sectionRef = useRef(null);
     const [activeIndex, setActiveIndex] = useState(0);
+    const scrollToNext = () => {
+        if (nextRef?.current) {
+            nextRef.current.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -127,7 +135,12 @@ const CompanyTimeline = () => {
                         <h2>{timelineData[activeIndex].year}:</h2>
                         <h3>{timelineData[activeIndex].title}</h3>
                         <p>{timelineData[activeIndex].description}</p>
-                        <small>Scroll Down</small>
+                        <small
+                            onClick={scrollToNext}
+                            style={{ cursor: "pointer" }}
+                        >
+                            Scroll Down ↓
+                        </small>
                     </div>
 
                 </div>

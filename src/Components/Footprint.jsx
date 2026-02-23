@@ -18,7 +18,7 @@ function Footprint() {
 
   const printTotalSlides = 5;
 
-  useEffect(() => {
+  useEffect(() => {//Detect Screen Size
     const checkScreen = () => {
       setPrintIsMobile(window.innerWidth <= 992);
     };
@@ -29,7 +29,7 @@ function Footprint() {
   }, []);
 
   useEffect(() => {
-    if (printIsMobile) return;
+    if (printIsMobile) return;//If mobile → stop
 
     const handleScroll = () => {
       const wrapper = printWrapperRef.current;

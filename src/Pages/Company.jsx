@@ -7,11 +7,12 @@ import CoreTeam from "../Components/CoreTeam";
 import heroBanner from '../assets/herobanner.png'
 import { useNavigate } from "react-router-dom";
 function Company() {
-    const navigate=useNavigate()
+    const navigate = useNavigate()
 
     const label1 = useRef(null);
     const label2 = useRef(null);
     const label3 = useRef(null);
+    const coreTeamRef = useRef(null);
 
     useEffect(() => {
 
@@ -83,6 +84,7 @@ function Company() {
 
                 </div>
             </section>
+
             <section className="live-company-value">
                 <div className="live-company-value-container">
 
@@ -122,7 +124,7 @@ function Company() {
                             in Corporate India.
                         </p>
 
-                        <button className="live-company-value-btn" onClick={()=>navigate('/contact')}>
+                        <button className="live-company-value-btn" onClick={() => navigate('/contact')}>
                             Talk to Us
                         </button>
 
@@ -131,8 +133,10 @@ function Company() {
                 </div>
             </section>
 
-            <CompanyTimeline/>
-            <CoreTeam/>
+            <CompanyTimeline nextRef={coreTeamRef} />
+            <div ref={coreTeamRef}>
+                <CoreTeam />
+            </div>
             <CompanyCulture />
             <HrResource />
 
